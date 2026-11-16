@@ -1,0 +1,1727 @@
+{
+  "meta": {
+    "empresa": "PAREX ENGENHARIA S.A.",
+    "contrato": "5900110079",
+    "projeto": "N1341",
+    "data_base": "16/11/2026",
+    "extrato_arquivo": "5e4860e38b546e73c531.xlsx",
+    "fontes_dir": "D:\\RNC'S\\FONTES\\SGQ Vale - foto de 30-10-2026",
+    "total_registros": 482,
+    "total_ativas": 295,
+    "elegiveis_iapc": 82,
+    "em_dia": 77,
+    "atrasadas": 5,
+    "iapc_atual": 93.9,
+    "meta_iapc": 70.0,
+    "folga_pp": 23.9,
+    "qtd_vencidas": 5,
+    "qtd_nov": 10,
+    "qtd_dez": 19,
+    "total_alvo": 34,
+    "sim_sem_nov": 81.71,
+    "sim_sem_nov_dez": 58.54,
+    "sem_prazo_etapa4": [
+      "RNC-11580/24",
+      "RNC-10591/24"
+    ]
+  },
+  "rncs": [
+    {
+      "idx": 1,
+      "codigo": "RNC-09829/25",
+      "safe_code": "RNC-09829-25",
+      "bloco": "A",
+      "bloco_label": "VENCIDA",
+      "prazo": "20/01/2026",
+      "prazo_iso": "2026-01-20",
+      "dias_delta": -300,
+      "status_extrato": "Em atraso",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Gabriel Santos",
+      "disciplina": "Estruturas metálicas",
+      "tag": "CT-1310KN-11: Casa de Transferência",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Montagem parcial da plataforma na EL 508,610 da CT-1310KN-11.",
+      "escopo": "Durante inspeção em campo na CT-1310KN-11, foi identificado que a plataforma da EL +508,610 entre as fileiras A e B’ dos eixos 1 e 2, correspondentes ao projeto DF-SD-1000KN-M-88148-M-503765_rev.3, não apresentam a montagem completa das interligações estruturais. Foi constatada a ausência da maioria dos parafusos de fixação, talas de ligação, vigas e contraventos conforme fotos no anexo. Comprometendo a integridade da montagem e a transferência de esforços entre os elementos.Aspectos Observados:As interligações estruturais da plataforma em questão têm função de sustentar os equipamentos montados: chassi com tambor, sistema de acionamento com motor e redutor, além do chute de descarga do TR-1310KN-130.Projetos:DF-SD-1000KNM-M-88148-M-503780_rev.0DF-SD-1000KNM-M-88148-M-503767_rev.3DF-SD-1000KNM-M-88148-M-503766_rev.3",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Durante a inspeção na CT-1310KN-11, constatamos que a plataforma na EL +508,610 não estava com as interligações estruturais totalmente montadas, incluindo ausência de parafusos, talas, vigas e contraventos. A equipe reconhece a falha na conclusão da montagem e no controle das etapas executivas.\n\n\n1 - Instalar todos os parafusos de fixação conforme especificação do projeto.\n2 - Montar as talas de ligação, vigas e contraventos faltantes.\n3 - Realizar reaperto e verificação geral da estrutura após a conclusão da montagem.\n4 - Orientar a equipe sobre a sequência correta de montagem para evitar recorrências.",
+      "acoes_exec": "Foram executadas as ações necessárias para correção da não conformidade identificada, iniciando-se pela instalação de todos os parafusos de fixação em conformidade com as especificações de projeto. Na sequência, foi realizada a montagem das talas de ligação, vigas e contraventos que se encontravam pendentes.\nApós a conclusão da montagem, procedeu-se com o reaperto geral dos elementos e a verificação completa da estrutura, assegurando sua integridade e conformidade. Por fim, a equipe envolvida foi orientada quanto à sequência correta de montagem, com o objetivo de prevenir a recorrência da situação observada.\nEvidencias das ações tomadas em anexo.",
+      "checklist": [
+        "Instalar todos os parafusos de fixação da plataforma EL +508,610 (fileiras A–B', eixos 1–2) conforme projeto (DF-SD-...-503765/66/67/80).",
+        "Montar as talas de ligação, vigas e contraventos faltantes na estrutura da CT-1310KN-11.",
+        "Realizar reaperto (torque) e verificação geral da estrutura após conclusão da montagem (RIT-266/272/273/275 e RTP-621).",
+        "Orientar equipe quanto à sequência correta de montagem e anexar listas de presença e relatório fotográfico."
+      ],
+      "fontes": {
+        "folder": "RNC-09829-25",
+        "folder_exists": true,
+        "total_files": 9,
+        "total_photos_detected": 37,
+        "files": [
+          "34 FO-03-025 Lista de Presença RENAN.pdf",
+          "ANEXO_NC-09829_25.pdf",
+          "Lista de Presença - Relatório Fotográfico - Mecânico Montador.pdf",
+          "Lista de Presença-Relatrório Fotográfico - Qualidade - IT-08-022.pdf",
+          "RIT-266 DF-SD-1000KN-M-88148-M-503766 R02 - DF-SD-1000KN-M-88148-M-503767 R02.pdf",
+          "RIT-272 DF-SD-1000KN-M-88148-M-503766 R02.pdf",
+          "RIT-273 DF-SD-1000KN-M-88148-M-503764 R02 - DF-SD-1000KN-M-88148-M-503767 R02.pdf",
+          "RIT-275 DF-SD-1000KN-M-88148-M-503767 R02.pdf",
+          "RTP-621.pdf"
+        ],
+        "note": "9 arquivo(s) na pasta RNC-09829-25 (37 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-09829-25_01.jpg",
+          "caption": "ANEXO_NC-09829_25.pdf — Plataforma EL +508,610 (p.1/2)",
+          "source_file": "ANEXO_NC-09829_25.pdf"
+        },
+        {
+          "src": "photos/RNC-09829-25_02.jpg",
+          "caption": "ANEXO_NC-09829_25.pdf — Plataforma EL +508,610 (p.2/2)",
+          "source_file": "ANEXO_NC-09829_25.pdf"
+        },
+        {
+          "src": "photos/RNC-09829-25_03.jpg",
+          "caption": "RTP-621.pdf — Relatório de Torque Parafusos (p.1/2)",
+          "source_file": "RTP-621.pdf"
+        },
+        {
+          "src": "photos/RNC-09829-25_04.jpg",
+          "caption": "RIT-266 — Inspeção Topográfica (p.1/1)",
+          "source_file": "RIT-266 DF-SD-1000KN-M-88148-M-503766 R02 - DF-SD-1000KN-M-88148-M-503767 R02.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "codigo": "RNC-07310/25",
+      "safe_code": "RNC-07310-25",
+      "bloco": "A",
+      "bloco_label": "VENCIDA",
+      "prazo": "30/06/2026",
+      "prazo_iso": "2026-06-30",
+      "dias_delta": -139,
+      "status_extrato": "Em atraso",
+      "critica": "Não crítica preliminar",
+      "prioridade": "2 - Normal",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Qualidade",
+      "tag": "0- Não se aplica",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Não cumprimento do PIT relacionado ao recebimento dos ativos da Vale.",
+      "escopo": "Constatou-se que o plano de inspeção e teste não está sendo cumpridono que diz respeito aos recebimentos dos ativos da Vale. Até a data de 14 de agosto de 2025, a fiscalização não recebeu o relatório de recebimento, o que configura uma falha nos procedimentos estabelecidos.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "O não cumprimento do plano de inspeção e teste ocorreu devido à ausência de um fluxo formal de controle e envio dos relatórios de recebimento à fiscalização, resultando em atraso na comunicação e na evidência da conformidade dos ativos recebidos.\n\n\n\nRealizar treinamento para a equipe responsável quanto aos requisitos do plano de inspeção e teste e à obrigatoriedade do recebimento envio dos relatórios à fiscalização\n15/04/2026 \nPlanejamento das Atividades para regularização de recebimentos com prazo de conclusão atualizada conforme comentario vale (30/06/026 )\nInicialmente, será realizado o levantamento de todos os romaneios de retirada de materiais no almoxarifado VALE que foram aplicados no projeto, com prazo estimado de 15 dias.\nNa sequência, ao longo dos 12 dias subsequentes, será feita a separação e organização dos romaneios por ativo, garantindo rastreabilidade e melhor controle das informações.\nPosteriormente, será iniciada a etapa de emissão dos relatórios de recebimento de equipamentos, materiais e tubulações, com base nos dados levantados e organizados nas etapas anteriores. Sendo enviados semanalmente por guias de remessa destinadas a seus ativos.",
+      "acoes_exec": "Envio de relatórios de recebimento reguralizados junto à fiscalização.\n\nReforçado o procedimento de recebimento de materiais, incluindo prazos e responsáveis pelo envio dos relatórios.\n\nTreinamento realizado com a equipe responsável quanto aos requisitos do plano de inspeção e teste e à obrigatoriedade do envio dos relatórios à fiscalização",
+      "checklist": [
+        "Concluir o levantamento de todos os romaneios de retirada de materiais no almoxarifado Vale aplicados ao projeto.",
+        "Separar e organizar os romaneios por ativo, garantindo rastreabilidade e controle das informações.",
+        "Emitir e enviar semanalmente à fiscalização os relatórios de recebimento por guias de remessa/ativos.",
+        "Evidenciar treinamento da equipe responsável nos requisitos do PIT (PI-1000KN-Q-500004) e fluxo de envio."
+      ],
+      "fontes": {
+        "folder": "RNC-07310-25",
+        "folder_exists": true,
+        "total_files": 20,
+        "total_photos_detected": 308,
+        "files": [
+          "EVIDÊNCIAS DE RECEBIMENTOS VALIDADOS PELA FISCALIZAÇÃO VALE.pdf",
+          "Lista de Presença - Não cumprimento do PIT relacionado ao recebimento dos ativos da Vale.pdf",
+          "PI-1000KN-Q-500004.pdf",
+          "RC-018-26.pdf",
+          "RC-019-26.pdf",
+          "RC-020-26.pdf",
+          "RC-021-26.pdf",
+          "REQUISIÇÃO PAREX.xlsx",
+          "RIR-001-25.pdf",
+          "RIR-002-25.pdf",
+          "RIR-004-25.pdf",
+          "RIR-006 - RG-2026.pdf",
+          "RIR-011-2026.pdf",
+          "RIR-012-2026.pdf",
+          "RIR-018-2026.pdf",
+          "RIRT-001.pdf",
+          "RIRT-002.pdf",
+          "RIRT-003.pdf",
+          "RRLP-004-26.pdf",
+          "RRLP-005-26.pdf"
+        ],
+        "note": "20 arquivo(s) na pasta RNC-07310-25 (308 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-07310-25_01.jpg",
+          "caption": "Evidências de Recebimentos Validados Vale (p.1/38)",
+          "source_file": "EVIDÊNCIAS DE RECEBIMENTOS VALIDADOS PELA FISCALIZAÇÃO VALE.pdf"
+        },
+        {
+          "src": "photos/RNC-07310-25_02.jpg",
+          "caption": "Evidências de Recebimentos Validados Vale (p.2/38)",
+          "source_file": "EVIDÊNCIAS DE RECEBIMENTOS VALIDADOS PELA FISCALIZAÇÃO VALE.pdf"
+        },
+        {
+          "src": "photos/RNC-07310-25_03.jpg",
+          "caption": "RIR-001-25.pdf — Relatório de Recebimento (p.1/2)",
+          "source_file": "RIR-001-25.pdf"
+        },
+        {
+          "src": "photos/RNC-07310-25_04.jpg",
+          "caption": "RC-018-26.pdf — Registro de Recebimento (p.1/3)",
+          "source_file": "RC-018-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "codigo": "RNC-08938/25",
+      "safe_code": "RNC-08938-25",
+      "bloco": "A",
+      "bloco_label": "VENCIDA",
+      "prazo": "31/07/2026",
+      "prazo_iso": "2026-07-31",
+      "dias_delta": -108,
+      "status_extrato": "Em atraso",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Izaac Pio de Moura Barroso",
+      "disciplina": "Estruturas metálicas",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Alteração do projeto (corte) na viga do ED-1310KN-01.",
+      "escopo": "Foi identificada alteração do projeto (corte) na viga de TAG 03ED01C5736A (viga de rolamento do cabeça móvel do transportador 126) na fileira A entre os eixos 3 com 4 EL 544,600 do novo prédio peneiramento II. Isso demonstra violação do item 6.2.1 da ES-M-401_rev.07 que enfatiza, modificações só poderão ser executadas após aprovação formal de uma Nota de Alteração do Projeto (NAP) pelo gestor de contrato Vale.Documentos de referência:1310KN-S-500971_rev.1",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A alteração identificada na viga TAG 03ED01C5736A foi executada durante a montagem com o objetivo de viabilizar a instalação em campo, em função de interferências locais não previstas inicialmente. A modificação ocorreu sem a validação prévia junto à gestão do contrato, caracterizando desvio ao item 6.2.1 da ES-M-401_rev.07.\n\n\n\nRealizar o acabamento imediato da região do corte (esmerilhamento, limpeza e proteção).\n\nInstalar corretamente a tala de ligação conforme projeto e evidenciar a fixação.\n\nOrientar a equipe quanto à obrigatoriedade de conferir alinhamento e verticalidade antes de executar cortes ou ajustes em campo.",
+      "acoes_exec": "",
+      "checklist": [
+        "Realizar o acabamento imediato da região do corte na viga 03ED01C5736A (esmerilhamento, limpeza e proteção/pintura).",
+        "Instalar corretamente a tala de ligação conforme projeto (1310KN-S-500971 Rev.1) e evidenciar a fixação.",
+        "Orientar a equipe sobre conferência de alinhamento/verticalidade e proibição de cortes sem NAP aprovada."
+      ],
+      "fontes": {
+        "folder": "RNC-08938-25",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 6,
+        "files": [
+          "ANEXO-NC - 08938_25.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-08938-25 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-08938-25_01.jpg",
+          "caption": "ANEXO-NC - 08938_25.pdf — Viga 03ED01C5736A (EL 544,600) (p.1/2)",
+          "source_file": "ANEXO-NC - 08938_25.pdf"
+        },
+        {
+          "src": "photos/RNC-08938-25_02.jpg",
+          "caption": "ANEXO-NC - 08938_25.pdf — Viga 03ED01C5736A (EL 544,600) (p.2/2)",
+          "source_file": "ANEXO-NC - 08938_25.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "codigo": "RNC-01012/26",
+      "safe_code": "RNC-01012-26",
+      "bloco": "A",
+      "bloco_label": "VENCIDA",
+      "prazo": "31/08/2026",
+      "prazo_iso": "2026-08-31",
+      "dias_delta": -77,
+      "status_extrato": "Em atraso",
+      "critica": "Crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Gabriel Santos",
+      "disciplina": "Estruturas metálicas",
+      "tag": "TR-1310KN-126",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Não cumprimento dos parâmetros de processo de soldagem",
+      "escopo": "Identificado em Verificação de Sistem de Gestão pelo Normativo de Qualidade Vale os sgeuintes itens:Não cumprimento dos parâmetros de processo de soldagem definidos na EPS 004/23 (Especificação de Procedimento de Soldagem) na realização da solda do Transportador de Correia TR-1310KN-126 Eixo P12/P16 Fila D - Projeto: DF-SD-1000KN-M-88148-M-506391_Rev 1;b) EPS 004/23 não aprovada, disponível em WhatsApp do soldador;c) Deficiência no controle dos consumíveis de soldagem e não cumprimento do procedimento IT-08-002 - Tratamento de Consumíveis de Solda, conforme descrito abaixo:- Temperatura da estufa fora dos parâmetros estabelecidos;- Falta de registros da temperatura e umidade da estufa;- Armazenamento de consumíveis fora da estufa (retorno de obra);- Falta de rastreabilidade (controle de entrada e saída);- Consumíveis (Eletrodo 6013) com embalagem aberta, fora da estufa e disponível para uso.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Foi identificado que a soldagem do TR-1310KN-126 foi executada em desacordo com os parâmetros estabelecidos na EPS 004/23, havendo falha na observância das variáveis definidas para o processo. Constatou-se ainda que a EPS utilizada não estava formalmente aprovada, sendo disponibilizada por meio não controlado (WhatsApp), caracterizando uso de documento sem validação.\nVerificou-se também deficiência no controle de consumíveis de soldagem, com estufa operando fora dos parâmetros, ausência de registros de temperatura e umidade, falta de rastreabilidade de entrada e saída, armazenamento inadequado de consumíveis fora da estufa e disponibilização de eletrodos com embalagem aberta para uso.\nOs fatos evidenciam falha no cumprimento dos procedimentos internos aplicáveis ao processo de soldagem e no controle de documentos e insumos críticos, resultando na execução do serviço em desacordo com os requisitos técnicos estabelecidos para o projeto.\n\n\nNão cumprimento dos parâmetros de processo de soldagem definidos na EPS 004/23 (Especificação de Procedimento de Soldagem) na realização da solda do Transportador de Correia TR-1310KN-126 Eixo P12/P16 Fila D - Projeto: DF-SD-1000KN-M-88148-M-506391_Rev 1;*Realizar treinamento da equipe de soldagem quanto aos parâmetros  contidos nas EPS e a importância de seguilosb) EPS 004/23 não aprovada, disponível em WhatsApp do soldador;\n*Apresentar EPS verificada e aprovada pelo cliente e distribuir.\nc) Deficiência no controle dos consumíveis de soldagem e não cumprimento do procedimento IT-08-002 - Tratamento de Consumíveis de Solda, conforme descrito abaixo:\n- Temperatura da estufa fora dos parâmetros estabelecidos; Adequação da estufa de armazenamento de consumíveis ao procedimento, com a implementação de barreiras de controle termohigrometro e  controle diário com evidências- Falta de registros da temperatura e umidade da estufa; Implementar controle de temperatura e umidade\n- Armazenamento de consumíveis fora da estufa (retorno de obra);- Falta de rastreabilidade (controle de entrada e saída); Implementar controle de distribuição e recolhimento de consumíveis de soldagem\n- Consumíveis (Eletrodo 6013) com embalagem aberta, fora da estufa e disponível para uso.- Remover e segregar consumível",
+      "acoes_exec": "* Foi realizado aprovação da EPS-004/23 ok\n* Eletrodo 6013 ( envidado para filial em paraupebas  )\n* Implementado controle de saída dos consumiveis da estufa - Novo modelo aprovado no email anexo\n* Padronizado controle de temperatura da estufa. - KAUANE VAI SCANNEAR\n* Realizado conscientização com soldadores. EPS 006 -OK",
+      "checklist": [
+        "Treinar equipe de soldagem nos parâmetros da EPS aplicável (EPS ERA-PRX-004.23 / EPS-006-24 R02) e disponibilizar EPS aprovada pelo cliente.",
+        "Adequar estufa de consumíveis ao IT-08-002 com termohigrômetro e manter registros diários de temperatura e umidade.",
+        "Implementar controle de distribuição/recolhimento (entrada e saída) e remover/segregar eletrodos 6013 com embalagem aberta fora da estufa."
+      ],
+      "fontes": {
+        "folder": "RNC-01012-26",
+        "folder_exists": true,
+        "total_files": 3,
+        "total_photos_detected": 151,
+        "files": [
+          "EPS ERA-PRX-004.23 - FCAW - 2G, 3G, 4G AWS D1.1.PDF",
+          "EPS-006-24 R02.pdf",
+          "Evidncias de encerramento de RNC 01012-26.pdf"
+        ],
+        "note": "3 arquivo(s) na pasta RNC-01012-26 (151 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-01012-26_01.jpg",
+          "caption": "Evidências RNC 01012-26 (RF-378 / Estufa / Soldagem) (p.1/5)",
+          "source_file": "Evidncias de encerramento de RNC 01012-26.pdf"
+        },
+        {
+          "src": "photos/RNC-01012-26_02.jpg",
+          "caption": "Evidências RNC 01012-26 (RF-378 / Estufa / Soldagem) (p.2/5)",
+          "source_file": "Evidncias de encerramento de RNC 01012-26.pdf"
+        },
+        {
+          "src": "photos/RNC-01012-26_03.jpg",
+          "caption": "Evidências RNC 01012-26 (RF-378 / Estufa / Soldagem) (p.3/5)",
+          "source_file": "Evidncias de encerramento de RNC 01012-26.pdf"
+        },
+        {
+          "src": "photos/RNC-01012-26_04.jpg",
+          "caption": "Evidências RNC 01012-26 (RF-378 / Estufa / Soldagem) (p.4/5)",
+          "source_file": "Evidncias de encerramento de RNC 01012-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "codigo": "RNC-03628/26",
+      "safe_code": "RNC-03628-26",
+      "bloco": "A",
+      "bloco_label": "VENCIDA",
+      "prazo": "31/10/2026",
+      "prazo_iso": "2026-10-31",
+      "dias_delta": -16,
+      "status_extrato": "Em atraso",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Gabriel Santos",
+      "disciplina": "Qualidade",
+      "tag": "0- Não se aplica",
+      "area": "0 - Não aplicável",
+      "titulo": "Auditoria Parex – Grupo II – 2.3 – Recursos de monitoramento e medição",
+      "escopo": "Verificou-se que os equipamentos utilizados para medição e monitoramento não estão devidamente controlados no documento FO-03-022 - Planilha de Equipamentos de Medição e Ensaios, comprometendo a rastreabilidade das medições e o atendimento aos requisitos estabelecidos pelo sistema de gestão da qualidade.Evidência da Não Conformidade:Paquímetro, Certificado 18563/26, calibrado em 23/02/26 e vencimento em 02/27.Não evidenciado no controle de instrumentos calibrados da Planilha de Equipamentos de Medição e Ensaios FO-03-22;Não evidenciado certificado de calibração.Trena 5080, certificado 5080/26, validade em 03/04/27;Não evidenciado no controle de instrumentos calibrados da Planilha de Equipamentos de Medição e Ensaios FO-03-22;Luxímetro PX 14290, calibrado em 07/08/25 e vencimento em 07/08/26;Não evidenciado no controle de instrumentos calibrados da Planilha de Equipamentos de Medição e Ensaios FO-03-22;Pirômetro 14002/26, calibrado em 06/04/26 e vencimento em 08/04/27;Não evidenciado no controle de instrumentos calibrados da Planilha de Equipamentos de Medição e Ensaios FO-03-22.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece a não conformidade identificada quanto à ausência de controle adequado de equipamentos utilizados para medição e monitoramento no documento FO-03-022 – Planilha de Equipamentos de Medição e Ensaios.\nFoi verificado que os instrumentos relacionados, sendo eles paquímetro, trena, luxímetro e pirômetro, embora possuam identificação e, em alguns casos, informações de calibração e validade, não estavam devidamente cadastrados e controlados na planilha aplicável. Também foi constatada a ausência de evidência do certificado de calibração do paquímetro, conforme apontado na evidência da não conformidade.\nReconhece-se que o controle de equipamentos de medição e ensaios é fundamental para garantir a confiabilidade dos resultados obtidos em campo, a rastreabilidade das medições realizadas e o atendimento aos requisitos estabelecidos pelo Sistema de Gestão da Qualidade.\n\n\nSerá realizado o levantamento completo dos instrumentos de medição e ensaio calibrados disponíveis na obra, com verificação da identificação, certificado de calibração, data de calibração, validade e condição de uso.\nApós o levantamento, será efetuada a atualização do controle de instrumentos no documento FO-03-022 – Planilha de Equipamentos de Medição e Ensaios, garantindo que todos os equipamentos utilizados para medição e monitoramento estejam devidamente cadastrados, rastreados e com suas informações metrológicas atualizadas.\nComo ação complementar, será realizado treinamento com a equipe de almoxarifado, abordando os critérios para recebimento, armazenamento, controle, liberação e distribuição de instrumentos calibrados para uso em campo, de forma a evitar a utilização de equipamentos não controlados ou sem evidência de calibração vigente.\nTambém será realizado treinamento com a equipe da qualidade, reforçando as responsabilidades quanto ao controle documental, verificação dos certificados, atualização periódica da planilha de instrumentos, monitoramento dos prazos de validade das calibrações e rastreabilidade dos equipamentos utilizados nas atividades de inspeção, medição e ensaio da obra.\nAs ações serão evidenciadas por meio da planilha FO-03-022 atualizada, certificados de calibração disponíveis, lista de presença dos treinamentos, registros fotográficos e demais evidências aplicáveis ao controle metrológico.",
+      "acoes_exec": "Foi realizado o levantamento dos instrumentos de medição e ensaio calibrados disponíveis na obra, contemplando a verificação da identificação dos equipamentos, dos certificados de calibração, das respectivas datas, dos prazos de validade e das condições de uso.\nApós o levantamento, foi realizada a atualização do controle de instrumentos por meio do documento FO-03-022 – Planilha de Equipamentos de Medição e Ensaios, assegurando o adequado cadastramento, rastreabilidade e atualização das informações metrológicas dos equipamentos utilizados nas atividades de medição, monitoramento e inspeção.\nComo ação complementar, foi realizado treinamento com a equipe de almoxarifado, abordando os critérios para recebimento, armazenamento, controle, liberação e distribuição de instrumentos calibrados para utilização em campo, visando prevenir o uso de equipamentos sem controle adequado ou sem evidência de calibração vigente.\nTambém foi realizado treinamento com a equipe da qualidade, reforçando as responsabilidades relacionadas ao controle documental, à verificação dos certificados de calibração, à atualização periódica da planilha de instrumentos, ao monitoramento dos prazos de validade e à rastreabilidade dos equipamentos utilizados nas atividades de inspeção, medição e ensaio da obra.\nAs ações foram registradas por meio da atualização da planilha FO-03-022, dos certificados de calibração disponíveis, das listas de presença dos treinamentos, dos registros fotográficos e das demais evidências aplicáveis ao controle metrológico.",
+      "checklist": [
+        "Realizar levantamento completo dos instrumentos calibrados na obra (paquímetro 18563/26, trena 5080, luxímetro PX 14290, pirômetro 14002/26 e demais) com certificados válidos.",
+        "Atualizar integralmente a planilha FO-03-022 (Planilha de Equipamentos de Medição e Ensaios) e anexar certificados.",
+        "Realizar treinamento com equipes de Almoxarifado e Qualidade sobre controle metrológico (anexar listas de presença e fotos)."
+      ],
+      "fontes": {
+        "folder": "RNC-03628-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 0,
+        "files": [
+          "FO-03-022 N1341 2026-10-22.xlsx"
+        ],
+        "note": "RNC de auditoria documental / calibragem sem imagens fotográficas anexadas."
+      },
+      "photos": []
+    },
+    {
+      "idx": 6,
+      "codigo": "RNC-00869/26",
+      "safe_code": "RNC-00869-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-116",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Interferência entre Coluna 00558AE e Estruturas Existentes – Chute TR-1310KN-116",
+      "escopo": "Durante a montagem da estrutura de sustentação do chute TR-1310KN-116, foi constatada interferência entre a coluna 00558AE e os elementos estruturais já instalados, especificamente mão francesa e viga existentes na mesma região.Essa interferência impede o adequado posicionamento, alinhamento e fixação dos componentes estruturais conforme previsto em projeto, impossibilitando a continuidade da montagem na área afetada. A condição foi verificada em campo no momento da tentativa de instalação da coluna, quando se constatou incompatibilidade de arranjo entre os elementos envolvidos.Desenho de referência: DF-SD-1000KN-M-88148-M-500557_REV. 0",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Conforme citado pela Qualidade, o \"Croqui\" anexado pela PAREX não é o Croqui de proposta de solução, é um print do projeto. PAREX, favor desenvolver Croqui para aprovação da Engenharia.\n\n\nSerá realizado o croqui, confome solicitação. Bem como emissão relatorio fotográfico evidenciando ajuste realizado. ( Postagem na etapa de Executar, evidenciar e reportar )",
+      "acoes_exec": "",
+      "checklist": [
+        "Desenvolver e submeter croqui técnico de proposta de solução para aprovação da Engenharia Vale (não utilizar print simples).",
+        "Executar em campo o ajuste aprovado na interferência entre coluna 00558AE e estruturas existentes (chute TR-1310KN-116).",
+        "Emitir relatório fotográfico evidenciando o ajuste realizado para postagem na etapa de execução."
+      ],
+      "fontes": {
+        "folder": "RNC-00869-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 2,
+        "files": [
+          "EVIDÊNCIA PARA ABERTURA DA RNC 00869-26.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-00869-26 (2 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-00869-26_01.jpg",
+          "caption": "EVIDÊNCIA ABERTURA (RF-205) — Chute TR-1310KN-116 (p.1/1)",
+          "source_file": "EVIDÊNCIA PARA ABERTURA DA RNC 00869-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "codigo": "RNC-01824/26",
+      "safe_code": "RNC-01824-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Elétrica",
+      "tag": "SE-1310KN-10: Subestação 1310",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "VÁLVULA DO TF-1310KN-11",
+      "escopo": "Evidência objetiva constatada durante fiscalização em campo, onde foi identificado no TF-1310KN-11 da SE-1310KN-10 do fabricante “WEG” encontra-se com o seguinte desvio.• A Válvula de controle do fluxo esta danificada.Documentos de referência: DF-1310KN-E-500190",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Durante a fiscalização em campo, foi identificada não conformidade no equipamento TF-1310KN-11, pertencente à SE-1310KN-10, de fabricação da WEG, conforme evidência objetiva registrada.\n\n\n\n* Realizar substiuição da válvula por orginal ou compatível aprovada pela engenharia vale.\n* Evidenciar com relatorio fotografico de acompahamento das etapas de substituição da válvula.",
+      "acoes_exec": "",
+      "checklist": [
+        "Substituir (ou reparar conforme parecer Engenharia) a válvula de controle de fluxo danificada do TF-1310KN-11 (WEG) por original ou compatível aprovada pela Engenharia Vale.",
+        "Emitir relatório fotográfico acompanhando todas as etapas da substituição/reparo da válvula."
+      ],
+      "fontes": {
+        "folder": "RNC-01824-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 4,
+        "files": [
+          "VALVULA DO TF-1310KN-11.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-01824-26 (4 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-01824-26_01.jpg",
+          "caption": "VALVULA DO TF-1310KN-11.pdf — Transformador e válvula (p.1/2)",
+          "source_file": "VALVULA DO TF-1310KN-11.pdf"
+        },
+        {
+          "src": "photos/RNC-01824-26_02.jpg",
+          "caption": "VALVULA DO TF-1310KN-11.pdf — Transformador e válvula (p.2/2)",
+          "source_file": "VALVULA DO TF-1310KN-11.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "codigo": "RNC-01897/26",
+      "safe_code": "RNC-01897-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Qualidade",
+      "tag": "0- Não se aplica",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Falta de Marcação e Segregação de Parafusos com Quebra de Torque.",
+      "escopo": "Durante auditoria realizada no pátio de pré-montagem das araras, foram identificadas quebras de procedimento relacionadas ao armazenamento e identificação de parafusos, porcas e arruelas, conforme descrito abaixo:Armazenamento de materiais sem segregação por fabricante e bitola, em desacordo com o procedimento vigente;Parafusos provenientes de quebra de torque identificados com coloração amarela (torque executado) e azul (inspecionado e aprovado por qualidade terceirizada). Conforme procedimento, estes itens devem ser identificados na cor vermelha;Presença de parafusos, porcas e arruelas oxidados, armazenados juntamente com materiais em condições íntegras, podendo ocasionar contaminação e comprometimento da qualidade dos demais materiais.2º Requisito - ES-M-401, Rev.: 07 - Especificação de Serviços para Montagem Eletromecânica.7.3.2 ArmazenamentoA Contratada deverá atender os itens abaixo relacionados para gestão do almoxarifado, mas não se limitando a: Os parafusos, porcas e arruelas deverão ser estocados limpos de sujeira e ferrugem, principalmente nas roscas, sendo indispensável guardá-los levemente oleados.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A ausência de segregação adequada dos parafusos, porcas e arruelas compromete a rastreabilidade dos fixadores, aumentando o risco de utilização incorreta em campo. Da mesma forma, a identificação inadequada de parafusos provenientes de quebra de torque pode levar à reutilização indevida de itens que deveriam estar claramente sinalizados conforme procedimento.\n\n\n* Será realizada a segregação imediata de todos os parafusos, porcas e arruelas armazenados no pátio de pré-montagem e almoxarifado.\n* Realizar treinamento com equipe de almoxarifado e montagem sobre como deve realizado o armazenamento de parafusos, porcas e arruelas, conforme procedimento.\n* Evidenciar atráves de relatório fotográfico e lista de treinamento as ações tomadas.",
+      "acoes_exec": "",
+      "checklist": [
+        "Segregar imediatamente parafusos, porcas e arruelas por fabricante/bitola no pátio de pré-montagem e almoxarifado e tratar/retirar oxidados.",
+        "Identificar na cor VERMELHA os parafusos provenientes de quebra de torque conforme procedimento vigente.",
+        "Treinar equipes de Almoxarifado e Montagem no armazenamento correto (ES-M-401 Rev.07) e anexar relatório fotográfico + lista de presença."
+      ],
+      "fontes": {
+        "folder": "RNC-01897-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 4,
+        "files": [
+          "Rel. Fotográfico NC- 01897_26.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-01897-26 (4 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-01897-26_01.jpg",
+          "caption": "Rel. Fotográfico NC- 01897_26.pdf — Parafusos no pátio (p.1/1)",
+          "source_file": "Rel. Fotográfico NC- 01897_26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "codigo": "RNC-02029/26",
+      "safe_code": "RNC-02029-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "SI-1310KN-125: Silo",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Não conformidade por incompatibilidade de chapas de piso com interferência no SILO SI-1310KN-125 – Elevação +518.600 (CWP 08)",
+      "escopo": "Durante a atividade de montagem das chapas de piso referentes ao projeto 1310KN-S-500343, foi identificada incompatibilidade dimensional entre os componentes fornecidos e o espaço disponível em campo.As chapas de piso abaixo relacionadas, totalizando 20 unidades, apresentam comprimento de aproximadamente 2150 mm, enquanto o vão disponível para instalação é de 1660 mm, resultando em interferência direta com o equipamento CHUTE CH-1310KN-125:0715J (01 un)0715K (01 un)0715L (05 un)0716A (01 un)0716B (01 un)0716C (01 un)0716D (01 un)0572A (01 un)0716E (01 un)0716F (01 un)0716G (01 un)0716H (01 un)0717A (01 un)0717B (01 un)0717C (01 un)0572E (01 un)A interferência ocorre na elevação +518.600, no eixo 08, entre as filas B e D, no escopo do CWP 08, inviabilizando a montagem conforme projeto.Projeto de referência: 1310KN-S-500343 Rev. 0",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Realizar os ajustes necessários nas chapas para sua implantação, garantindo a cobertura integral de toda a área em aberto. Enviar relatório fotográfico como evidência. \n\n\n* Será realizado os ajustes e instalação das chapas de forma a garantir cobertura integral da área em aberto e evidenciado com relatorio fotografico.Conforme orientação da engenharia.",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar os ajustes dimensionais necessários nas 20 chapas de piso (vão 1.660 mm vs 2.150 mm, eixo 08, filas B–D, EL. +518,600).",
+        "Instalar as chapas garantindo cobertura integral da área em aberto sem interferência com o chute CH-1310KN-125.",
+        "Emitir relatório fotográfico evidenciando a conclusão conforme orientação da Engenharia."
+      ],
+      "fontes": {
+        "folder": "RNC-02029-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 4,
+        "files": [
+          "EVIDÊNCIA DE ABERTURA RNC 02029-26.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-02029-26 (4 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02029-26_01.jpg",
+          "caption": "EVIDÊNCIA ABERTURA — Chapas piso SI-1310KN-125 (p.1/1)",
+          "source_file": "EVIDÊNCIA DE ABERTURA RNC 02029-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "codigo": "RNC-02091/26",
+      "safe_code": "RNC-02091-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Civil",
+      "tag": "TR-1310KN-131: Transportador de Correia",
+      "area": "1000KN - GERAL",
+      "titulo": "Cota de topo do graute das bases da mesa de esticamento da TR-1310KN-131 igualada a cota de topo de concreto do piso",
+      "escopo": "Divergência entre o projeto e a execução das bases da Mesa de Esticamento da TR-1310KN-131. Conforme o projeto DF-1000KN-M-88148-M-501302, a elevação prevista para o topo do graute é de 500,250. Contudo, o Relatório de Inspeção Topográfica RIT-684 (em anexo) evidencia que a cota atual do piso acabado também é de 500,250, não restando margem para a execução do grauteamento.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Engenharia informa que será necessário escarificar 2cm e realizar o grouteamento, visto que o groute é o mais indicado para regularizar a superfície de contato entre a chapa de base e o concreto.\n\n\n28/05/2026 De acordo com a proposta da engenharia: Será realizado o ajuste da base, grauteamento.",
+      "acoes_exec": "",
+      "checklist": [
+        "Escarificar 2 cm da base de concreto na mesa de esticamento do TR-1310KN-131 (cota atual 500,250, ref. RIT-684).",
+        "Executar o grauteamento para regularizar a superfície de contato entre a chapa de base e o concreto (DF-1000KN-M-88148-M-501302).",
+        "Emitir registro fotográfico e verificação topográfica comprovando o ajuste da base."
+      ],
+      "fontes": {
+        "folder": "RNC-02091-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 7,
+        "files": [
+          "RIT-684 (1).pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-02091-26 (7 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02091-26_01.jpg",
+          "caption": "RIT-684 — Levantamento Topográfico bases TR-1310KN-131 (p.1/2)",
+          "source_file": "RIT-684 (1).pdf"
+        },
+        {
+          "src": "photos/RNC-02091-26_02.jpg",
+          "caption": "RIT-684 — Levantamento Topográfico bases TR-1310KN-131 (p.2/2)",
+          "source_file": "RIT-684 (1).pdf"
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "codigo": "RNC-02249/26",
+      "safe_code": "RNC-02249-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Elétrica",
+      "tag": "TR-1310KN-136:Transportador de Correia",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Aterramento da TR-1310KN-136",
+      "escopo": "Evidência objetiva constatada durante fiscalização em campo, TR-1310KN-136 sem os devidos aterramento na base conforme NBR-5410/5419/NR-10, encontra-se com os seguintes desvios.*Estrutura sem aterramento;*Ponto de ancoragem sem cabo;*Estrutura sem ponto de ancoragem, conforme DT.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Durante a fiscalização em campo, foi constatado que o equipamento TR-1310KN-136 apresenta ausência de aterramento da estrutura, ausência de cabo no ponto de ancoragem e inexistência de ponto de ancoragem conforme detalhamento técnico. \n\n\n* Será realizada a emissão relatorio fotográfico detalhado, evidenciando as atividades realizadas. \n* Conforme solicitado pela engenharia, será apresentado na etapa de ''Executar, reportar e evidenciar'', o registro da malha de aterramento.",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar pontos de ancoragem faltantes e conectar cabos de aterramento na estrutura/base do TR-1310KN-136 (1310KN-E-500151/2).",
+        "Emitir relatório fotográfico detalhado evidenciando todas as conexões de aterramento realizadas.",
+        "Apresentar registro/medição da malha de aterramento na etapa de executar, reportar e evidenciar."
+      ],
+      "fontes": {
+        "folder": "RNC-02249-26",
+        "folder_exists": true,
+        "total_files": 2,
+        "total_photos_detected": 14,
+        "files": [
+          "Aterramento da TR-1310KN-136.pdf",
+          "REGISTRO FOTOGRAFICO ATERRAMENTO TR-136 PX.pdf"
+        ],
+        "note": "2 arquivo(s) na pasta RNC-02249-26 (14 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02249-26_01.jpg",
+          "caption": "Aterramento TR-1310KN-136 — Desvios apontados (p.1/3)",
+          "source_file": "Aterramento da TR-1310KN-136.pdf"
+        },
+        {
+          "src": "photos/RNC-02249-26_02.jpg",
+          "caption": "Aterramento TR-1310KN-136 — Desvios apontados (p.2/3)",
+          "source_file": "Aterramento da TR-1310KN-136.pdf"
+        },
+        {
+          "src": "photos/RNC-02249-26_03.jpg",
+          "caption": "Aterramento TR-1310KN-136 — Desvios apontados (p.3/3)",
+          "source_file": "Aterramento da TR-1310KN-136.pdf"
+        },
+        {
+          "src": "photos/RNC-02249-26_04.jpg",
+          "caption": "Registro Fotográfico Aterramento TR-136 (p.1/8)",
+          "source_file": "REGISTRO FOTOGRAFICO ATERRAMENTO TR-136 PX.pdf"
+        },
+        {
+          "src": "photos/RNC-02249-26_05.jpg",
+          "caption": "Registro Fotográfico Aterramento TR-136 (p.2/8)",
+          "source_file": "REGISTRO FOTOGRAFICO ATERRAMENTO TR-136 PX.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "codigo": "RNC-02328/26",
+      "safe_code": "RNC-02328-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-130::Transportador de Correia",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Desalinhamento da redutora da TR-1310KN-130",
+      "escopo": "Durante o processo de montagem do transportador de correia TR-1310KN-130 projeto DF-1000KN-M-88148-M-501200_Rev_9, foi constatado um desvio de posicionamento. De acordo com o relatório de inspeção topográfica RIT-692 em anexo, a unidade redutora apresenta um desalinhamento de 110 mm em relação ao eixo de simetria do tambor de acionamento. Este desvio impossibilita o acoplamento correto entre os eixos.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "O relatório topográfico PJL-CKS-087 (em anexo) registra a maior divergência de elevação no ponto P41, localizado na Viga 03729-D (DF-SD-1000KN-M-88148-M-503765), com valor de 29 mm.O desenho DF-SD-1000KN-M-88148-M-503780 específica, na base do acionamento do TR, a utilização de chapas com 25 mm de espessura, conforme também evidenciado no modelo 3D (em destaque na cor vermelha).Entretanto, verifica-se que essas chapas não estão atualmente instaladas.Diante do cenário descrito, solicito à TECNOKOR a adoção das tratativas necessárias para a adequada montagem dos ativos envolvidos.Informo ainda que a RNC-02328/26 será direcionada à TECNOKOR para as tratativas pertinentes.\n\nConforme e-mail encaminhado pela Engenharia VALE em 03/07/2026, em anexo, a PAREX realizará a implantação da chapa 03780AA (25 mm). Após a conclusão da instalação, será executada verificação topográfica para avaliação do nivelamento do sistema de acionamento.",
+      "acoes_exec": "",
+      "checklist": [
+        "Implantar a chapa 03780AA (25 mm) na base do acionamento do TR-1310KN-130 conforme e-mail Vale (03/07/2026) e DF-SD-...-503780.",
+        "Executar nova verificação topográfica (RIT) após instalação da chapa para avaliar nivelamento e alinhamento do acionamento.",
+        "Emitir relatório topográfico e registros fotográficos comprovando a conformidade."
+      ],
+      "fontes": {
+        "folder": "RNC-02328-26",
+        "folder_exists": true,
+        "total_files": 2,
+        "total_photos_detected": 27,
+        "files": [
+          "EMAIL DE ORIENTAÇÃO DA ENGENHARIA VALE PARA EXECUÇÃO DE CHAPAS DE 25 MM.pdf",
+          "RIT-692.pdf"
+        ],
+        "note": "2 arquivo(s) na pasta RNC-02328-26 (27 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02328-26_01.jpg",
+          "caption": "RIT-692.pdf — Desalinhamento 110 mm redutora TR-1310KN-130 (p.1/2)",
+          "source_file": "RIT-692.pdf"
+        },
+        {
+          "src": "photos/RNC-02328-26_02.jpg",
+          "caption": "RIT-692.pdf — Desalinhamento 110 mm redutora TR-1310KN-130 (p.2/2)",
+          "source_file": "RIT-692.pdf"
+        },
+        {
+          "src": "photos/RNC-02328-26_03.jpg",
+          "caption": "E-mail Engenharia Vale — Chapa 25 mm (p.1/12)",
+          "source_file": "EMAIL DE ORIENTAÇÃO DA ENGENHARIA VALE PARA EXECUÇÃO DE CHAPAS DE 25 MM.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "codigo": "RNC-03189/26",
+      "safe_code": "RNC-03189-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Estruturas metálicas",
+      "tag": "YY-1310KN-01: Cable Rack",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "ESTRUTURA METÉLICA (SUPORTE DOS LEITOS), REMOÇÃO DA SOLDAGEM.",
+      "escopo": "Durante a inspeção de rotina, foi verificado que o suporte de um dos leitos estava com a solda removida e apoiado no gradil, em vez de estar devidamente soldado a uma das vigas da estrutura metálica. Essa situação caracteriza falha de montagem/estrutura, configurando condição de NÃO CONFORMIDADE, por comprometer a estabilidade e a segurança do conjunto.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "ESTRUTURA METÉLICA (SUPORTE DOS LEITOS), REMOÇÃO DA SOLDAGEM. RNC 30/10/2026 09:30:10 Gerado por Gabriel Santos (c0713699@vale.com) Página 7 de 9 Será realizado o reposicionamento do suporte, seguido da execução da soldagem, conforme previsto em projeto e de acordo com os procedimentos aplicáveis.",
+      "acoes_exec": "",
+      "checklist": [
+        "Reposicionar o suporte do leito de cabos (atualmente apoiado no gradil) para a viga da estrutura metálica conforme projeto.",
+        "Executar a soldagem e acabamento conforme projeto e procedimentos aplicáveis (ES-M-401 / diretrizes elétricas).",
+        "Apresentar registros de inspeção de qualidade (solda/montagem) e relatório fotográfico conforme parecer Vale."
+      ],
+      "fontes": {
+        "folder": "RNC-03189-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 6,
+        "files": [
+          "SQUAD 1 - RNC - (ESTRUTURA METÁLICA - CABLE RACK - SUPORTE do LEITO de Cabos).pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-03189-26 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-03189-26_01.jpg",
+          "caption": "SQUAD 1 — Cable Rack suporte sobre gradil (p.1/1)",
+          "source_file": "SQUAD 1 - RNC - (ESTRUTURA METÁLICA - CABLE RACK - SUPORTE do LEITO de Cabos).pdf"
+        }
+      ]
+    },
+    {
+      "idx": 14,
+      "codigo": "RNC-03630/26",
+      "safe_code": "RNC-03630-26",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "2 - Normal",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Qualidade",
+      "tag": "0- Não se aplica",
+      "area": "0 - Não aplicável",
+      "titulo": "Auditoria Parex – Grupo III – 3.8 – Produção e provisão de serviço",
+      "escopo": "As atividades e serviços em andamento possuem instruções de trabalho e procedimentos, porém não foi possível evidenciar que estejam disponíveis nas frentes de serviço ou acessíveis a todos os colaboradores.Evidência da Não ConformidadeNão evidenciado que o Encarregado de Almoxarifado tenha conhecimento e acesso ao documento IT-012-001_r11 - Recebimento, Armazenamento, Preservação, Manuseio e Expedição.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio apontado, uma vez que, embora existam instruções de trabalho e procedimentos aplicáveis às atividades em execução, não foi possível evidenciar treinamentos realizados ao encarregado de almoxarifado.\n\n\nComo tratativa, será realizado treinamento específico com o Encarregado de Almoxarifado e sua equipe, abordando os requisitos do documento IT-012-001_r11 – Recebimento, Armazenamento, Preservação, Manuseio e Expedição,\nAdicionalmente, será disponibilizado o acesso aos procedimentos e instruções de trabalho aplicáveis às atividades do almoxarifado, garantindo que o encarregado e os colaboradores tenham condições de consultar os documentos vigentes sempre que necessário, assegurando o correto entendimento e cumprimento dos requisitos estabelecidos.\nAs ações serão evidenciadas por meio de lista de presença, registro de treinamento, disponibilização dos procedimentos aplicáveis e demais registros pertinentes do Sistema de Gestão da Qualidade.",
+      "acoes_exec": "",
+      "checklist": [
+        "Realizar treinamento específico com Encarregado de Almoxarifado e equipe nos requisitos do IT-012-001_r11.",
+        "Disponibilizar acesso físico/digital aos procedimentos e instruções de trabalho vigentes nas atividades do almoxarifado.",
+        "Evidenciar com lista de presença, registro de treinamento e comprovação de disponibilização dos documentos."
+      ],
+      "fontes": {
+        "folder": "RNC-03630-26",
+        "folder_exists": true,
+        "total_files": 0,
+        "total_photos_detected": 0,
+        "files": [],
+        "note": "RNC de auditoria documental / calibragem sem imagens fotográficas anexadas."
+      },
+      "photos": []
+    },
+    {
+      "idx": 15,
+      "codigo": "RNC-10484/25",
+      "safe_code": "RNC-10484-25",
+      "bloco": "B",
+      "bloco_label": "NOV/2026",
+      "prazo": "30/11/2026",
+      "prazo_iso": "2026-11-30",
+      "dias_delta": 14,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-126",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Desvio Dimensional nas Bases Civis das Chapas de Reforço TAG 06308AD.",
+      "escopo": "Durante inspeção das bases civis destinadas à instalação das cinco Chapas de Reforço TAG 06308AD, foi identificado desvio dimensional nas cotas de nível executadas pela empresa responsável pela etapa civil. As medições realizadas em campo evidenciam que as cinco bases correspondentes apresentam altura superior aos valores especificados em projeto, resultando em discrepância entre a superfície construída e a cota de referência definida para a montagem. Constatou-se, portanto, que as bases não foram executadas conforme as tolerâncias e parâmetros estabelecidos nos desenhos técnicos.Bases 8 @ 9 - 11 milímetros (Pontos P1 e P2)Bases 10 @ 12 - 07 milímetros (Pontos P3 e P4)Obs: RIT 515 está em anexo como evidência.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Complementar com evidência fotográfica e topográfica da adequação.\n\n\nConforme orientação da engenharia, será emitido os relatorios topografico e fotografico para evidenciar as ações, os mesmo serão anexados na etapa de executar, evidenciar e reportar.",
+      "acoes_exec": "",
+      "checklist": [
+        "Concluir adequação dimensional nas 5 bases civis das chapas de reforço TAG 06308AD (Bases 8@9 e 10@12).",
+        "Emitir relatório topográfico comprovando regularização das cotas de nível conforme projeto.",
+        "Emitir relatório fotográfico evidenciando a adequação executada em campo."
+      ],
+      "fontes": {
+        "folder": "RNC-10484-25",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 6,
+        "files": [
+          "RIT-595.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-10484-25 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-10484-25_01.jpg",
+          "caption": "RIT-595.pdf — Bases civis TAG 06308AD (p.1/2)",
+          "source_file": "RIT-595.pdf"
+        },
+        {
+          "src": "photos/RNC-10484-25_02.jpg",
+          "caption": "RIT-595.pdf — Bases civis TAG 06308AD (p.2/2)",
+          "source_file": "RIT-595.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 16,
+      "codigo": "RNC-04339/26",
+      "safe_code": "RNC-04339-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "04/12/2026",
+      "prazo_iso": "2026-12-04",
+      "dias_delta": 18,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "",
+      "disciplina": "Mecânica",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "MANÔMETRO COM  ETIQUETA COM DESPRENDIMENTO/ILEGÍVEL.( 29131/25)",
+      "escopo": "Durante a inspeção de qualidade, no Prédio ED-1310KN-01, foi identificado que um dos manômetros apresentava a etiqueta de identificação ilegível e o outro nem apresentava. Essa condição compromete a rastreabilidade e a correta identificação do instrumento, impossibilitando a verificação da validade da calibração do conjunto.Em razão da não conformidade, o equipamento deveria ser segregado para regularização, sendo liberado para utilização somente após a conclusão da tratativa e a comprovação da conformidade. O encarregado de solda e o inspetor Nível 1 (N1) de Solda foram acionados para providenciar a substituição do manômetro; entretanto, não foi possível realizar a correção devido à indisponibilidade de um manômetro calibrado para substituição.Observação: PATRIMÔNIO: 39131",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio do requisito do IT-08-071-PP Rev. 00, item 8.1 («Os instrumentos devem ser inspecionados visualmente em 100%, não sendo aceitável nenhum tipo de dano mecânico ou avarias»), e do IT-03-001 Rev. 04, itens 6.4 e 6.5 (instrumento sem condições de uso identificado e segregado; rastreabilidade da identificação). O desvio ocorreu porque as etiquetas de calibração dos manômetros eram de papel adesivo e se degradavam com o calor, o gás e o manuseio na frente de soldagem, a condição da etiqueta não era conferida antes do uso e não havia manômetro calibrado de reserva para a substituição imediata.\n\n\nAção de correção: Recolher ao almoxarifado e segregar os dois manômetros do conjunto encontrado na soldagem das chapas de piso da EL. 504.00 do ED-1310KN-01, patrimônios 39131 (RNC-04339/26) e 39123 (RNC-04342/26), até a regularização. Os dois tinham calibração válida na data da ocorrência. O 39131 tem o certificado 39131/26, emitido em 10/03/2026 e válido até 10/03/2027: recebe etiqueta nova, é incluído na planilha de controle de instrumentos da obra (FO-03-022) e liberado pela Qualidade. O 39123 tem o certificado 39123A/25, de 14/11/2025, que vence em 14/11/2026: será enviado para nova calibração e só volta ao uso com o novo certificado e a etiqueta; até lá a frente usa manômetro calibrado da reserva. Responsáveis: Técnico de Qualidade (metrologia) e almoxarifado.\nAção corretiva: (1) Etiquetas de calibração dos manômetros em material resistente ao calor e ao manuseio (metálica ou plastificada), com número do certificado, data de calibração e vencimento. (2) O inspetor de soldagem N1 confere, na liberação da frente de soldagem, corte ou pré-aquecimento, se os manômetros dos reguladores têm etiqueta legível e calibração válida; sem isso a frente não é liberada e o manômetro é trocado pela reserva. (3) O almoxarifado mantém manômetros calibrados de reserva e faz inspeção mensal de todos os manômetros em campo (etiqueta, validade e danos), com recolhimento e segregação dos vencidos, ilegíveis ou danificados, conforme IT-03-001 Rev. 04, itens 5 e 6.4. (4) Treinamento dos soldadores, maçariqueiros, encarregados e supervisores de solda, almoxarifes e inspetores de soldagem N1 no IT-03-001 Rev. 04 (itens 5, 6.4 e 6.5) e no IT-08-071-PP Rev. 00, item 8.\nEvidências: relatório fotográfico dos manômetros com a etiqueta nova; certificados de calibração válidos; planilha de controle de instrumentos (FO-03-022) atualizada; registros das inspeções mensais do almoxarifado; lista de presença do treinamento.\nA atividade será acompanhada pela Qualidade Vale e pela fiscalização; data prevista 02/12/2026.",
+      "acoes_exec": "",
+      "checklist": [
+        "Recolher/segregar manômetros 39131 e 39123 da soldagem EL. 504,00; usar reserva calibrada na frente; atualizar etiqueta resistente ao calor e FO-03-022 (re-calibrar 39123).",
+        "Implantar conferência pelo Inspetor de Soldagem N1 na liberação de frentes e inspeção mensal pelo almoxarifado (IT-03-001 Rev.04).",
+        "Treinar soldadores, maçariqueiros, encarregados, almoxarifes e N1; anexar fotos das etiquetas novas, certificados e listas de presença."
+      ],
+      "fontes": {
+        "folder": "RNC-04339-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 7,
+        "files": [
+          "RNC- SQUAD 1 - INSPEÇÃO QUALIDADE - FRENTE DE SERVIÇO - MONÔMETRO COM ETIQUETA.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-04339-26 (7 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-04339-26_01.jpg",
+          "caption": "SQUAD 1 — Manômetros 39131 e 39123 EL. 504,00 (p.1/2)",
+          "source_file": "RNC- SQUAD 1 - INSPEÇÃO QUALIDADE - FRENTE DE SERVIÇO - MONÔMETRO COM ETIQUETA.pdf"
+        },
+        {
+          "src": "photos/RNC-04339-26_02.jpg",
+          "caption": "SQUAD 1 — Manômetros 39131 e 39123 EL. 504,00 (p.2/2)",
+          "source_file": "RNC- SQUAD 1 - INSPEÇÃO QUALIDADE - FRENTE DE SERVIÇO - MONÔMETRO COM ETIQUETA.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "codigo": "RNC-10831/25",
+      "safe_code": "RNC-10831-25",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "11/12/2026",
+      "prazo_iso": "2026-12-11",
+      "dias_delta": 25,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-123: Transportador de Correia",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Tags dos componentes trocados do TR-1310KN-123",
+      "escopo": "No transportador de correia TR-1310KN-123, situado no novo prédio do peneiramento secundário entre os eixos 5 e 6 da elevação 513,600, foi verificado que o chute de descarga não está instalado conforme o projeto original (TAG trocado). A montagem não está de acordo com o desenho identificado como DF-1000KN-M-88148-M-500612_rev.3, em comparação com a documentação técnica do projeto.Descrição do 2º requisito: No manual do fornecedor da Tecnokor DF-MA-1000KN-M-88148-G-500001_rev.0, na seção 4.4, que aborda tolerâncias de montagem, é indicado que “Normalmente as partes dos equipamentos que requerem tolerâncias finas são pré-montadas e testadas na fábrica, antes do despacho”.Documentos de referência:DF-1000KN-M-88148-M-500624_rev.3.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio do desenho de arranjo DF-1000KN-M-88148-M-500612 Rev. 3: no TR-1310KN-123, EL. 513,600, entre os eixos 5 e 6, o chute de descarga foi montado com a identificação (TAG) de outro transportador (etiqueta TR-1310KN-124). O desvio ocorreu porque esses componentes têm a mesma marca tipada nos transportadores TR-1310KN-120 a TR-1310KN-125 (desenhos de fabricação DF-SD-1000KN-M-88148-M-500644, DF-SD-1000KN-M-88148-M-500653 e DF-SD-1000KN-M-88148-M-500660). A montagem conferiu as peças pela marca tipada, sem conferir o TAG da etiqueta de identificação de cada componente com o desenho de arranjo do transportador.\n\n\nEm atendimento aos pareceres da Engenharia e da Qualidade Vale, a Parex descreve abaixo o que será realizado no TR-1310KN-123. O RF-277 (27/04/2026) registrou as marcas tipadas das peças montadas, conforme os desenhos de fabricação, mas não evidenciou a etiqueta de identificação de cada componente.\nAção de correção: 1) O inspetor de Qualidade da Parex, com a fiscalização, verificará cada componente do TR-1310KN-123: mesas do transportador, chassi do tambor de acionamento, tambor de acionamento e chute de descarga. A marca tipada será comparada com o desenho de fabricação, e o TAG da etiqueta de identificação do fornecedor, com o desenho de arranjo DF-1000KN-M-88148-M-500612 Rev. 3. 2) Componente com etiqueta de outro transportador: a equipe de montagem mecânica, acompanhada pelo inspetor de Qualidade, substituirá a etiqueta por identificação com o TAG TR-1310KN-123, mantendo o código do item do fornecedor, de modo que «na estrutura não deve constar a etiqueta que refere-se a outro transportador». Componente com marca tipada diferente da do desenho de fabricação será trocado pelo componente correto, com nova inspeção de montagem e novo relatório de torque das ligações. 3) Será emitido novo relatório fotográfico do TR-1310KN-123, validado pela fiscalização. As fotos serão tiradas neste transportador e mostrarão, em cada componente, a marca tipada e a etiqueta de identificação legível.\nAção corretiva: treinamento, com lista de presença, dos supervisores e encarregados de montagem mecânica e dos inspetores de Qualidade de mecânica no IT-08-013-PP (Montagem e Inspeção de Equipamentos). Tema: antes da montagem, conferir a marca tipada e o TAG da etiqueta de identificação de cada componente com o desenho de arranjo do equipamento. Controle: em cada liberação de montagem de equipamento, o inspetor de Qualidade da Parex registra no relatório de inspeção a etiqueta de identificação dos componentes principais, antes de liberar a montagem.\nEvidências: novo relatório fotográfico do TR-1310KN-123 validado pela fiscalização; relatório de torque das ligações, se houver troca de componente; lista de presença do treinamento.\nA atividade será acompanhada pela Qualidade Vale e pela fiscalização; data prevista 27/11/2026.",
+      "acoes_exec": "* Realizado o levantamento da posição correta dos componentes do TR-1310KN-123 e executado a troca conforme projeto DF-1000KN-M-88148-M-500612_rev.3\n\nOBS: O Relatório Fotográfico 277 evidencia a correção do desvio.",
+      "checklist": [
+        "Conferir conjuntamente (Parex + Fiscalização) mesas, chassi, tambor e chute do TR-1310KN-123 (marca tipada × etiqueta vs DF-...-500612 Rev.3).",
+        "Substituir etiquetas erradas pelo TAG TR-1310KN-123 (ou trocar componente divergente com novo relatório de torque).",
+        "Emitir novo relatório fotográfico do TR-1310KN-123 validado pela fiscalização mostrando marca tipada + etiqueta legível.",
+        "Treinar supervisores, encarregados e inspetores no IT-08-013-PP e registrar etiquetas nas liberações."
+      ],
+      "fontes": {
+        "folder": "RNC-10831-25",
+        "folder_exists": true,
+        "total_files": 2,
+        "total_photos_detected": 5,
+        "files": [
+          "ANEXO_NC-10831_25.pdf",
+          "Rf-277 - ENCERRAMENTO DE RNC 10831-25.pdf"
+        ],
+        "note": "2 arquivo(s) na pasta RNC-10831-25 (5 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-10831-25_01.jpg",
+          "caption": "ANEXO_NC-10831_25.pdf — TAG trocado TR-1310KN-123 (p.1/2)",
+          "source_file": "ANEXO_NC-10831_25.pdf"
+        },
+        {
+          "src": "photos/RNC-10831-25_02.jpg",
+          "caption": "ANEXO_NC-10831_25.pdf — TAG trocado TR-1310KN-123 (p.2/2)",
+          "source_file": "ANEXO_NC-10831_25.pdf"
+        },
+        {
+          "src": "photos/RNC-10831-25_03.jpg",
+          "caption": "Rf-277 — Conferência marcas tipadas (p.1/1)",
+          "source_file": "Rf-277 - ENCERRAMENTO DE RNC 10831-25.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "codigo": "RNC-10879/25",
+      "safe_code": "RNC-10879-25",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "11/12/2026",
+      "prazo_iso": "2026-12-11",
+      "dias_delta": 25,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-122: Transportador de Correia",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Tags dos componentes trocados do TR-1310KN-122",
+      "escopo": "No novo prédio do peneiramento secundário EL 513,600, localizado entre os eixos 4 e 5, foram identificadas divergências nas posições dos componentes do transportador de correia TR-1310KN-122 em relação ao projeto original (TAG trocados). Os conjuntos foram instalados de forma inadequada: as mesas do transportador, o chassi do tambor de acionamento e o chute de descarga não estão conforme o desenho identificado como DF-1000KN-M-88148-M-500608_rev.3, em relação à documentação técnica do projeto.Descrição do 2º requisito: No manual do fornecedor da Tecnokor DF-MA-1000KN-M-88148-G-500001_rev.0, na seção 4.4, que aborda tolerâncias de montagem, é indicado que “Normalmente as partes dos equipamentos que requerem tolerâncias finas são pré-montadas e testadas na fábrica, antes do despacho”.Documentos de referência:DF-1000KN-M-88148-M-500624_rev.3.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio do desenho de arranjo DF-1000KN-M-88148-M-500608 Rev. 3: no TR-1310KN-122, EL. 513,600, entre os eixos 4 e 5, as mesas do transportador, o chassi do tambor de acionamento e o chute de descarga foram montados com a identificação (TAG) de outro transportador. O desvio ocorreu porque esses componentes têm a mesma marca tipada nos transportadores TR-1310KN-120 a TR-1310KN-125 (desenhos de fabricação DF-SD-1000KN-M-88148-M-500644, DF-SD-1000KN-M-88148-M-500653 e DF-SD-1000KN-M-88148-M-500660). A montagem conferiu as peças pela marca tipada, sem conferir o TAG da etiqueta de identificação de cada componente com o desenho de arranjo do transportador.\n\n\nEm atendimento aos pareceres da Engenharia e da Qualidade Vale, a Parex descreve abaixo o que será realizado no TR-1310KN-122. O RF-278 (27/04/2026) registrou as marcas tipadas das peças montadas, conforme os desenhos de fabricação, mas não evidenciou a etiqueta de identificação de cada componente.\nAção de correção: 1) O inspetor de Qualidade da Parex, com a fiscalização, verificará cada componente do TR-1310KN-122: mesas do transportador, chassi do tambor de acionamento, tambor de acionamento e chute de descarga. A marca tipada será comparada com o desenho de fabricação, e o TAG da etiqueta de identificação do fornecedor, com o desenho de arranjo DF-1000KN-M-88148-M-500608 Rev. 3. 2) Componente com etiqueta de outro transportador: a equipe de montagem mecânica, acompanhada pelo inspetor de Qualidade, substituirá a etiqueta por identificação com o TAG TR-1310KN-122, mantendo o código do item do fornecedor, de modo que «na estrutura não deve constar a etiqueta que refere-se a outro transportador». Componente com marca tipada diferente da do desenho de fabricação será trocado pelo componente correto, com nova inspeção de montagem e novo relatório de torque das ligações. 3) Será emitido novo relatório fotográfico do TR-1310KN-122, validado pela fiscalização. As fotos serão tiradas neste transportador e mostrarão, em cada componente, a marca tipada e a etiqueta de identificação legível.\nAção corretiva: treinamento, com lista de presença, dos supervisores e encarregados de montagem mecânica e dos inspetores de Qualidade de mecânica no IT-08-013-PP (Montagem e Inspeção de Equipamentos). Tema: antes da montagem, conferir a marca tipada e o TAG da etiqueta de identificação de cada componente com o desenho de arranjo do equipamento. Controle: em cada liberação de montagem de equipamento, o inspetor de Qualidade da Parex registra no relatório de inspeção a etiqueta de identificação dos componentes principais, antes de liberar a montagem.\nEvidências: novo relatório fotográfico do TR-1310KN-122 validado pela fiscalização; relatório de torque das ligações, se houver troca de componente; lista de presença do treinamento.\nA atividade será acompanhada pela Qualidade Vale e pela fiscalização; data prevista 27/11/2026.",
+      "acoes_exec": "* Realizado o levantamento da posição correta dos componentes do TR TR-1310KN-122 e executado a troca conforme projeto DF-1000KN-M-88148-M-500624_rev.3\n\nOBS: O Relatório Fotográfico 278 evidencia a correção do desvio.",
+      "checklist": [
+        "Conferir conjuntamente (Parex + Fiscalização) mesas, chassi, tambor e chute do TR-1310KN-122 (marca tipada × etiqueta vs DF-...-500608 Rev.3).",
+        "Substituir etiquetas erradas pelo TAG TR-1310KN-122 (ou trocar componente divergente com novo relatório de torque).",
+        "Emitir novo relatório fotográfico do TR-1310KN-122 validado pela fiscalização mostrando marca tipada + etiqueta legível (complementar RF-278).",
+        "Treinar supervisores, encarregados e inspetores no IT-08-013-PP (lista de presença)."
+      ],
+      "fontes": {
+        "folder": "",
+        "folder_exists": false,
+        "total_files": 0,
+        "total_photos_detected": 0,
+        "files": [],
+        "note": "Pasta ausente na exportação FONTES de 30/10/2026 (texto do extrato cita RF-278 e RF-279)."
+      },
+      "photos": []
+    },
+    {
+      "idx": 19,
+      "codigo": "RNC-10883/25",
+      "safe_code": "RNC-10883-25",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "11/12/2026",
+      "prazo_iso": "2026-12-11",
+      "dias_delta": 25,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-121: Transportador de Correia",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Tags dos componentes trocados do TR-1310KN-121",
+      "escopo": "No novo prédio do peneiramento secundário EL 513,600, localizado entre os eixos 3 e 4, foram identificadas divergências nas posições dos componentes do transportador de correia TR-1310KN-121 em relação ao projeto original (TAG trocados). Os conjuntos foram instalados de forma inadequada: as mesas do transportador e o chassi do tambor de acionamento não estão conforme o desenho identificado como DF-1000KN-M-88148-M-500604_rev.3, em relação à documentação técnica do projeto.Descrição do 2º requisito: No manual do fornecedor da Tecnokor DF-MA-1000KN-M-88148-G-500001_rev.0, na seção 4.4, que aborda tolerâncias de montagem, é indicado que “Normalmente as partes dos equipamentos que requerem tolerâncias finas são pré-montadas e testadas na fábrica, antes do despacho”.Documentos de referência:DF-1000KN-M-88148-M-500624_rev.3.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio do desenho de arranjo DF-1000KN-M-88148-M-500604 Rev. 3: no TR-1310KN-121, EL. 513,600, entre os eixos 3 e 4, as mesas do transportador e o chassi do tambor de acionamento foram montados com a identificação (TAG) de outro transportador. O desvio ocorreu porque esses componentes têm a mesma marca tipada nos transportadores TR-1310KN-120 a TR-1310KN-125 (desenhos de fabricação DF-SD-1000KN-M-88148-M-500644, DF-SD-1000KN-M-88148-M-500653 e DF-SD-1000KN-M-88148-M-500660). A montagem conferiu as peças pela marca tipada, sem conferir o TAG da etiqueta de identificação de cada componente com o desenho de arranjo do transportador.\n\n\nEm atendimento aos pareceres da Engenharia e da Qualidade Vale, a Parex descreve abaixo o que será realizado no TR-1310KN-121. O RF-279 (27/04/2026) registrou as marcas tipadas das peças montadas, conforme os desenhos de fabricação, mas não evidenciou a etiqueta de identificação de cada componente.\nAção de correção: 1) O inspetor de Qualidade da Parex, com a fiscalização, verificará cada componente do TR-1310KN-121: mesas do transportador, chassi do tambor de acionamento, tambor de acionamento e chute de descarga. A marca tipada será comparada com o desenho de fabricação, e o TAG da etiqueta de identificação do fornecedor, com o desenho de arranjo DF-1000KN-M-88148-M-500604 Rev. 3. 2) Componente com etiqueta de outro transportador: a equipe de montagem mecânica, acompanhada pelo inspetor de Qualidade, substituirá a etiqueta por identificação com o TAG TR-1310KN-121, mantendo o código do item do fornecedor, de modo que «na estrutura não deve constar a etiqueta que refere-se a outro transportador». Componente com marca tipada diferente da do desenho de fabricação será trocado pelo componente correto, com nova inspeção de montagem e novo relatório de torque das ligações. 3) Será emitido novo relatório fotográfico do TR-1310KN-121, validado pela fiscalização. As fotos serão tiradas neste transportador e mostrarão, em cada componente, a marca tipada e a etiqueta de identificação legível.\nAção corretiva: treinamento, com lista de presença, dos supervisores e encarregados de montagem mecânica e dos inspetores de Qualidade de mecânica no IT-08-013-PP (Montagem e Inspeção de Equipamentos). Tema: antes da montagem, conferir a marca tipada e o TAG da etiqueta de identificação de cada componente com o desenho de arranjo do equipamento. Controle: em cada liberação de montagem de equipamento, o inspetor de Qualidade da Parex registra no relatório de inspeção a etiqueta de identificação dos componentes principais, antes de liberar a montagem.\nEvidências: novo relatório fotográfico do TR-1310KN-121 validado pela fiscalização; relatório de torque das ligações, se houver troca de componente; lista de presença do treinamento.\nA atividade será acompanhada pela Qualidade Vale e pela fiscalização; data prevista 27/11/2026.",
+      "acoes_exec": "* Realizado o levantamento da posição correta dos componentes do TR-1310KN-121 e executado a troca conforme projeto DF-1000KN-M-88148-M-500604_rev.3\n\nOBS: O Relatório Fotográfico 279 evidencia a correção do desvio.",
+      "checklist": [
+        "Conferir conjuntamente (Parex + Fiscalização) mesas, chassi, tambor e chute do TR-1310KN-121 (marca tipada × etiqueta vs DF-...-500604 Rev.3).",
+        "Substituir etiquetas erradas pelo TAG TR-1310KN-121 (ou trocar componente divergente com novo relatório de torque).",
+        "Emitir novo relatório fotográfico do TR-1310KN-121 validado pela fiscalização mostrando marca tipada + etiqueta legível (complementar RF-279).",
+        "Treinar supervisores, encarregados e inspetores no IT-08-013-PP (lista de presença)."
+      ],
+      "fontes": {
+        "folder": "",
+        "folder_exists": false,
+        "total_files": 0,
+        "total_photos_detected": 0,
+        "files": [],
+        "note": "Pasta ausente na exportação FONTES de 30/10/2026 (texto do extrato cita RF-278 e RF-279)."
+      },
+      "photos": []
+    },
+    {
+      "idx": 20,
+      "codigo": "RNC-02222/26",
+      "safe_code": "RNC-02222-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "30/12/2026",
+      "prazo_iso": "2026-12-30",
+      "dias_delta": 44,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Elétrica",
+      "tag": "CT-1310KN-14: Casa de Transferência",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Aterramento da CT-1310KN-14",
+      "escopo": "Evidência objetiva constatada durante fiscalização em campo, onde foi identificado no CT-1310KN-14, estrutura sem os devidos aterramentos na base, não atendendo NBR-5410/5419/NR-10 e itens 11 e 14 do desenho de referência, pois foram encontrados os seguintes desvios:1. Estrutura sem aterramento;2. Pontos de ancoragem sem cabo;   3. Afloramentos curto.Documentos de referência: 1310KN-E-500152",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A ausência ou pendência da conexão de aterramento pode comprometer a proteção contra choques elétricos, descargas atmosféricas, correntes de fuga e possíveis falhas elétricas, expondo pessoas, equipamentos e a própria estrutura a riscos operacionais. Além disso, a falta de aterramento adequado pode interferir na conformidade da montagem com os requisitos de segurança elétrica aplicáveis.\n\n\n* Realizar conexão dos pontos de aterramento conforme especificado em projeto.\n* Evidenciar com registro fotográfico da ação executada.\n* Observação: Leitura da malha de aterramento é responsabilidade MOVO.",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar conexão completa dos pontos de aterramento na base da CT-1310KN-14 (ancoragens e afloramentos curtos conf. 1310KN-E-500152).",
+        "Evidenciar a execução com registro fotográfico completo (leitura da malha a cargo da MOVO)."
+      ],
+      "fontes": {
+        "folder": "RNC-02222-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 8,
+        "files": [
+          "ATERRAMENTO DA CT-1310KN-14.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-02222-26 (8 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02222-26_01.jpg",
+          "caption": "ATERRAMENTO DA CT-1310KN-14.pdf — Pontos na base (p.1/3)",
+          "source_file": "ATERRAMENTO DA CT-1310KN-14.pdf"
+        },
+        {
+          "src": "photos/RNC-02222-26_02.jpg",
+          "caption": "ATERRAMENTO DA CT-1310KN-14.pdf — Pontos na base (p.2/3)",
+          "source_file": "ATERRAMENTO DA CT-1310KN-14.pdf"
+        },
+        {
+          "src": "photos/RNC-02222-26_03.jpg",
+          "caption": "ATERRAMENTO DA CT-1310KN-14.pdf — Pontos na base (p.3/3)",
+          "source_file": "ATERRAMENTO DA CT-1310KN-14.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 21,
+      "codigo": "RNC-01821/26",
+      "safe_code": "RNC-01821-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Elétrica",
+      "tag": "SE-1310KN-10: Subestação 1310",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "INDICADOR DE TEMPERATURA DO TL-1310KN-01",
+      "escopo": "Evidência objetiva constatada durante fiscalização em campo, onde foi identificado no TL-1310KN-01 da SE-1310KN-10 do fabricante “WEG” encontra-se com o seguinte desvio:• Indicador de temperatura do enrolamento está com cabo/capilar danificado.Documentos de referência: DF-1310KN-E-500190",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Validamos o apontamento técnico que indica que o indicador de temperatura do enrolamento está com o cabo/capilar danificado. A concordância deve-se ao fato de que tal avaria impede o correto funcionamento do sensor, inviabilizando o controle térmico do equipamento.\nVale ressaltar que o projeto informado no RNC está incorreto.\nProjeto de referencia : DF-1300KN-E-00014-E-500004 REV _1 FOLHA 10.\n\n\n\nProposta de Tratativa\nRealizar treinamento com a equipe de materiais, abordando os critérios adequados para recebimento, armazenamento, e manuseio de ativos do cliente, a fim de evitar danos durante as etapas de recebimento e movimentação.\nQuanto ao cabo danificado, deverá ser avaliada a possibilidade de substituição apenas do cabo. Caso não seja tecnicamente viável, deverá ser realizada a substituição do conjunto do termômetro de óleo, conforme especificado no documento DF-1300KN-E-00014-E-500004 Rev. 1, Folha 10, ou por modelo similar compatível, desde que previamente aprovado pela Engenharia Elétrica Vale.",
+      "acoes_exec": "",
+      "checklist": [
+        "Avaliar troca apenas do cabo/capilar danificado do indicador de temperatura do TL-1310KN-01; se inviável, substituir conjunto (DF-1300KN-E-00014-E-500004 Rev.1 Fl.10 ou similar aprovado).",
+        "Treinar equipe de materiais sobre recebimento, armazenamento e manuseio de ativos do cliente (lista de presença).",
+        "Emitir relatório fotográfico comprovando substituição/reparo aprovado."
+      ],
+      "fontes": {
+        "folder": "RNC-01821-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 4,
+        "files": [
+          "INDICADOR DE TEMPERATURA DO TL-1310KN-01.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-01821-26 (4 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-01821-26_01.jpg",
+          "caption": "INDICADOR DE TEMPERATURA TL-1310KN-01 (p.1/2)",
+          "source_file": "INDICADOR DE TEMPERATURA DO TL-1310KN-01.pdf"
+        },
+        {
+          "src": "photos/RNC-01821-26_02.jpg",
+          "caption": "INDICADOR DE TEMPERATURA TL-1310KN-01 (p.2/2)",
+          "source_file": "INDICADOR DE TEMPERATURA DO TL-1310KN-01.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 22,
+      "codigo": "RNC-02093/26",
+      "safe_code": "RNC-02093-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-135 - Transportador",
+      "area": "1000KN - GERAL",
+      "titulo": "Desalinhamento no cavalete do tambor de acionamento TR-1310KN-135",
+      "escopo": "Identificado desalinhamento de 32 mm no cavalete do tambor de acionamento do Transportador TR-1310KN-135 em relação às coordenadas de projeto. A correção do alinhamento apresenta interferência física direta com o chute de despejo da TR-1310KN-136. Conforme relatório de Inspeção Topográfica RIT-685 em anexo.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Fazer o corte na nervura do chute de descarga do TR-1310KN-136 conforme registro fotográfico adicionado, sem chegar no costado do chute. \n\n\nDe acordo com a proposta da engenharia.",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar corte na nervura do chute de descarga do TR-1310KN-136 conforme registro fotográfico aprovado, sem atingir o costado do chute.",
+        "Verificar alinhamento do cavalete do tambor de acionamento do TR-1310KN-135 (sanar desvio de 32 mm do RIT-685) e evidenciar com fotos/RIT."
+      ],
+      "fontes": {
+        "folder": "RNC-02093-26",
+        "folder_exists": true,
+        "total_files": 3,
+        "total_photos_detected": 6,
+        "files": [
+          "RIT-685 (1).pdf",
+          "WhatsApp Image 2026-06-19 at 09.02.59.jpeg",
+          "WhatsApp Image 2026-06-19 at 09.03.00.jpeg"
+        ],
+        "note": "3 arquivo(s) na pasta RNC-02093-26 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02093-26_01.jpg",
+          "caption": "Foto campo — Interferência nervura TR-1310KN-135/136",
+          "source_file": "WhatsApp Image 2026-06-19 at 09.02.59.jpeg"
+        },
+        {
+          "src": "photos/RNC-02093-26_02.jpg",
+          "caption": "Foto campo — Detalhe corte/chute",
+          "source_file": "WhatsApp Image 2026-06-19 at 09.03.00.jpeg"
+        },
+        {
+          "src": "photos/RNC-02093-26_03.jpg",
+          "caption": "RIT-685 — Levantamento topográfico 32 mm (p.1/2)",
+          "source_file": "RIT-685 (1).pdf"
+        },
+        {
+          "src": "photos/RNC-02093-26_04.jpg",
+          "caption": "RIT-685 — Levantamento topográfico 32 mm (p.2/2)",
+          "source_file": "RIT-685 (1).pdf"
+        }
+      ]
+    },
+    {
+      "idx": 23,
+      "codigo": "RNC-02094/26",
+      "safe_code": "RNC-02094-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "TR-1310KN-132: Transportador de Correia",
+      "area": "1000KN - GERAL",
+      "titulo": "Divergência dimensional do chute de descarga 01422AA da TR-1310KN-132",
+      "escopo": "Constatada inconformidade dimensional no Chute 01422AA. Conforme o projeto DF-1000KN-M-88148-M-501402, a largura transversal nominal é de 1450 mm, entretanto, a medição em campo registrou 1467 mm. Este desvio dimensional de 17 mm em relação ao projeto original resulta em interferência física direta com as chapas de piso. Conforme relatório de Inspeção Topográfica RIT-686 em anexo.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Fazer corte na nervura do chute, sem chegar no costado, para tirar essa interferência de 17mm. Após o corte, refazer a nervura. Colocar como evidências registros fotográficos. \n\n\nDe acordo com ação proposta ( Fazer corte na nervura do chute, sem chegar no costado, para tirar essa interferência de 17mm. Após o corte, refazer a nervura. Colocar como evidências registros fotográficos. )",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar corte na nervura do chute 01422AA do TR-1310KN-132, sem atingir o costado, eliminando a interferência de 17 mm (RIT-686).",
+        "Refazer a nervura após o corte conforme solução aprovada pela Engenharia.",
+        "Emitir registros fotográficos e verificação dimensional comprovando a correção."
+      ],
+      "fontes": {
+        "folder": "RNC-02094-26",
+        "folder_exists": true,
+        "total_files": 2,
+        "total_photos_detected": 6,
+        "files": [
+          "RIT-686 (1).pdf",
+          "WhatsApp Image 2026-06-17 at 09.21.23.jpeg"
+        ],
+        "note": "2 arquivo(s) na pasta RNC-02094-26 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-02094-26_01.jpg",
+          "caption": "Foto campo — Chute 01422AA TR-1310KN-132",
+          "source_file": "WhatsApp Image 2026-06-17 at 09.21.23.jpeg"
+        },
+        {
+          "src": "photos/RNC-02094-26_02.jpg",
+          "caption": "RIT-686 — Divergência 17 mm (1467 vs 1450 mm) (p.1/2)",
+          "source_file": "RIT-686 (1).pdf"
+        },
+        {
+          "src": "photos/RNC-02094-26_03.jpg",
+          "caption": "RIT-686 — Divergência 17 mm (1467 vs 1450 mm) (p.2/2)",
+          "source_file": "RIT-686 (1).pdf"
+        }
+      ]
+    },
+    {
+      "idx": 24,
+      "codigo": "RNC-03555/26",
+      "safe_code": "RNC-03555-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Estruturas metálicas",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "NERVURAS SOLDADAS EM ESTRUTURA METÁLICA SEM AS VERIFICAÇÕES (VA/VS), DO N1 DE SOLDA.",
+      "escopo": "Durante inspeção de rotina, foi verificado que as nervuras soldadas na Viga (03ED01C5656A), não possuíam identificação do inspetor de solda N1, responsável pela liberação da atividade. Constatou-se também a ausência dos registros de inspeção visual de ajuste (VA) e de inspeção visual de solda (VS).O inspetor de solda foi acionado para prestar esclarecimentos sobre a situação. Após verificação, constatou-se que as soldas executadas não haviam sido inspecionadas pelo profissional responsável, conforme previsto nos procedimentos de controle da qualidade.A condição observada caracteriza uma Não Conformidade, uma vez que a atividade foi executada sem a devida inspeção e rastreabilidade, impossibilitando a comprovação da conformidade das soldas realizadas.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A parex reconhece o desvio quanto ao requisito:\n6 PROCEDIMENTO6.6 SEQUÊNCIA DE ENSAIOPara a realização das verificações solicitadas nos subitens abaixo, para as fases de preparação da junta soldada e solda acabada podem ser utilizada os gabaritos de solda indicados nos Anexos III e IV deste procedimento, que ilustram as diferentes aplicações dos mesmos.6.6.1 Inspeção da preparação de juntas soldadasa) Verificar os chanfros em toda sua extensão quanto ao estado de limpeza e acabamento superficial (ver item 6.6.2). Qualquer descontinuidade encontrada deve ser analisada e, caso necessário, ser reparada conforme procedimento específico;b) Verificar o ângulo do bisel com auxílio de gabarito de solda ou goniômetro;c) Verificar altura da face da raiz (altura do nariz) com auxílio de gabarito de solda ou paquímetro;d) Verificar a abertura da raiz com auxílio de gabarito de solda;e) Verificar o alinhamento da junta com auxílio de gabarito de solda tipo \"High-Low\";f) Registrar os resultados do ensaio e avaliar conforme desenho, IEIS ou norma aplicável.6.6.2 Inspeção da junta soldadaa) Após o término da soldagem, o cordão de solda deve preparado com auxílio de escova de aço rotativa ou manualb) Verificar se a superfície está em condições de limpeza para ser inspecionada (ver item 6.2);c) Avaliar a altura do reforço de solda, garganta convexidade e perna, o que for aplicável, com auxílio de gabarito de solda;d) Verificar a presença de descontinuidades (ver itens 6.5.1. e 6.5.2); e) Verificar a existência do sinete do soldador adjacente ao cordão de solda;f) Examinar os locais de remoção dos dispositivos de fixação (cachorros) ou soldas provisórias. A superfície deve estar faceada e isenta de defeitos. Caso tenha havido deformação no metal de base, o mesmo deve ser reparado conforme procedimento específico;g) Registrar os resultados do ensaio e avaliar conforme norma aplicável. Nota: Os critérios de aceitação para as dimensões ou descontinuidades devem ser definidos pelas normas ou procedimentos aplicáveis ao empreendimento (ver item 3).\n\n\nSerá realizada a inspeção dos ajustes das nervuras por Inspetor de Soldagem N1. Após a verificação e aprovação, serão efetuadas as devidas marcações de liberação da inspeção visual de ajuste.\nSomente após essa liberação será autorizada a execução da soldagem, seguida da emissão dos respectivos registros de inspeção.\nPara as nervuras que já se encontram soldadas, serão realizadas inspeção visual de solda e ensaio por líquido penetrante, com o objetivo de verificar a conformidade das juntas executadas.\nAdicionalmente, será realizada a conscientização dos supervisores e encarregados quanto à correta sequência de inspeção, liberação e execução dos serviços, bem como ao cumprimento dos procedimentos de soldagem aplicáveis.",
+      "acoes_exec": "",
+      "checklist": [
+        "Realizar inspeção de ajuste (VA) pelo Inspetor de Soldagem N1 nas nervuras ponteados da viga 03ED01C5656A antes da soldagem definitiva.",
+        "Executar Inspeção Visual de Solda (VS) e ensaio por Líquido Penetrante (LP) nas nervuras já soldadas e emitir registros de inspeção.",
+        "Conscientizar supervisores e encarregados sobre sequência obrigatória de liberação VA/VS e procedimentos de soldagem."
+      ],
+      "fontes": {
+        "folder": "RNC-03555-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 5,
+        "files": [
+          "RNC - SQUAD1 (NERVURAS SOLDADAS SEM CONFERÊNCIA DO N1 DE SOLDA).pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-03555-26 (5 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-03555-26_01.jpg",
+          "caption": "SQUAD 1 — Nervuras viga 03ED01C5656A (p.1/2)",
+          "source_file": "RNC - SQUAD1 (NERVURAS SOLDADAS SEM CONFERÊNCIA DO N1 DE SOLDA).pdf"
+        },
+        {
+          "src": "photos/RNC-03555-26_02.jpg",
+          "caption": "SQUAD 1 — Nervuras viga 03ED01C5656A (p.2/2)",
+          "source_file": "RNC - SQUAD1 (NERVURAS SOLDADAS SEM CONFERÊNCIA DO N1 DE SOLDA).pdf"
+        }
+      ]
+    },
+    {
+      "idx": 25,
+      "codigo": "RNC-03558/26",
+      "safe_code": "RNC-03558-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Estruturas metálicas",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "NERVURAS SOLDADAS EM ESTRUTURA METÁLICA (VIGA - 03ED01C5658B), SEM VERIFICAÇÕES (VA/VS), DO N1 DE SOLDA.",
+      "escopo": "Durante inspeção de rotina, foi verificado que as nervuras soldadas na Viga (03ED01C5658B), eixo 4 para 5, EL;514.600, não possuíam identificação do inspetor de solda N1, responsável pela liberação da atividade. Constatou-se também a ausência dos registros de inspeção visual de ajuste (VA) e de inspeção visual de solda (VS).O inspetor de solda foi acionado para prestar esclarecimentos sobre a situação. Após verificação, constatou-se que as soldas executadas não haviam sido inspecionadas pelo profissional responsável, conforme previsto nos procedimentos de controle da qualidade.A condição observada caracteriza uma Não Conformidade, uma vez que a atividade foi executada sem a devida inspeção e rastreabilidade, impossibilitando a comprovação da conformidade das soldas realizadas.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A parex reconhece o desvio quanto ao requisito:\n6 PROCEDIMENTO6.6 SEQUÊNCIA DE ENSAIOPara a realização das verificações solicitadas nos subitens abaixo, para as fases de preparação da junta soldada e solda acabada podem ser utilizada os gabaritos de solda indicados nos Anexos III e IV deste procedimento, que ilustram as diferentes aplicações dos mesmos.6.6.1 Inspeção da preparação de juntas soldadasa) Verificar os chanfros em toda sua extensão quanto ao estado de limpeza e acabamento superficial (ver item 6.6.2). Qualquer descontinuidade encontrada deve ser analisada e, caso necessário, ser reparada conforme procedimento específico;b) Verificar o ângulo do bisel com auxílio de gabarito de solda ou goniômetro;c) Verificar altura da face da raiz (altura do nariz) com auxílio de gabarito de solda ou paquímetro;d) Verificar a abertura da raiz com auxílio de gabarito de solda;e) Verificar o alinhamento da junta com auxílio de gabarito de solda tipo \"High-Low\";f) Registrar os resultados do ensaio e avaliar conforme desenho, IEIS ou norma aplicável.6.6.2 Inspeção da junta soldadaa) Após o término da soldagem, o cordão de solda deve preparado com auxílio de escova de aço rotativa ou manualb) Verificar se a superfície está em condições de limpeza para ser inspecionada (ver item 6.2);c) Avaliar a altura do reforço de solda, garganta convexidade e perna, o que for aplicável, com auxílio de gabarito de solda;d) Verificar a presença de descontinuidades (ver itens 6.5.1. e 6.5.2); e) Verificar a existência do sinete do soldador adjacente ao cordão de solda;f) Examinar os locais de remoção dos dispositivos de fixação (cachorros) ou soldas provisórias. A superfície deve estar faceada e isenta de defeitos. Caso tenha havido deformação no metal de base, o mesmo deve ser reparado conforme procedimento específico;g) Registrar os resultados do ensaio e avaliar conforme norma aplicável. Nota: Os critérios de aceitação para as dimensões ou descontinuidades devem ser definidos pelas normas ou procedimentos aplicáveis ao empreendimento (ver item 3).\n\n\nSerá realizada a inspeção dos ajustes das nervuras por Inspetor de Soldagem N1. Após a verificação e aprovação, serão efetuadas as devidas marcações de liberação da inspeção visual de ajuste.\nSomente após essa liberação será autorizada a execução da soldagem, seguida da emissão dos respectivos registros de inspeção.\nPara as nervuras que já se encontram soldadas, serão realizadas inspeção visual de solda e ensaio por líquido penetrante, com o objetivo de verificar a conformidade das juntas executadas.\nAdicionalmente, será realizada a conscientização dos supervisores e encarregados quanto à correta sequência de inspeção, liberação e execução dos serviços, bem como ao cumprimento dos procedimentos de soldagem aplicáveis.",
+      "acoes_exec": "",
+      "checklist": [
+        "Realizar inspeção de ajuste (VA) pelo Inspetor de Soldagem N1 nas nervuras da viga 03ED01C5658B (eixo 4–5, EL. 514,600) antes da soldagem definitiva.",
+        "Executar Inspeção Visual de Solda (VS) e ensaio por Líquido Penetrante (LP) nas nervuras já soldadas e emitir registros de inspeção.",
+        "Conscientizar supervisores e encarregados sobre sequência obrigatória de liberação VA/VS e procedimentos de soldagem."
+      ],
+      "fontes": {
+        "folder": "RNC-03558-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 7,
+        "files": [
+          "RNC - SQUAD1 (NERVURAS SOLDADAS SEM CONFERÊNCIA DO N1 DE SOLDA)2.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-03558-26 (7 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-03558-26_01.jpg",
+          "caption": "SQUAD 1 — Nervuras viga 03ED01C5658B (p.1/2)",
+          "source_file": "RNC - SQUAD1 (NERVURAS SOLDADAS SEM CONFERÊNCIA DO N1 DE SOLDA)2.pdf"
+        },
+        {
+          "src": "photos/RNC-03558-26_02.jpg",
+          "caption": "SQUAD 1 — Nervuras viga 03ED01C5658B (p.2/2)",
+          "source_file": "RNC - SQUAD1 (NERVURAS SOLDADAS SEM CONFERÊNCIA DO N1 DE SOLDA)2.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 26,
+      "codigo": "RNC-03629/26",
+      "safe_code": "RNC-03629-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "2 - Normal",
+      "responsavel": "Gabriel Santos",
+      "disciplina": "Qualidade",
+      "tag": "0- Não se aplica",
+      "area": "0 - Não aplicável",
+      "titulo": "Auditoria Parex – Grupo III – 3.6 – Controle de processos, produtos e serviços providos externamente",
+      "escopo": "Não evidenciado que, para os serviços de fabricação de suportes de tubulação (linhas do SPCI - Sistema de Proteção e Combate a Incêndio) executados pelo subfornecedor INDEX, os requisitos aplicáveis tenham sido devidamente comunicados e registrados.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio apontado, referente à ausência de evidência de que os requisitos aplicáveis aos serviços de fabricação de suportes de tubulação das linhas do SPCI – Sistema de Proteção e Combate a Incêndio, executados pelo subfornecedor INDEX, tenham sido devidamente comunicados e registrados.\nReinteiramos a importância de que todos os requisitos técnicos, normativos, contratuais, de qualidade e de projeto sejam formalmente comunicados aos subfornecedores antes e durante a execução dos serviços, assegurando o correto entendimento das exigências aplicáveis, bem como a rastreabilidade das informações repassadas.\n\n\nSerá apresentada a evidência de que os requisitos aplicáveis ao fornecimento foram devidamente comunicados à subcontratada, assegurando que as condições técnicas, documentais, de qualidade e demais requisitos pertinentes aos serviços contratados tenham sido formalmente repassados e compreendidos.\nTambém serão apresentados os registros pertinentes aos serviços prestados pela subcontratada, de forma a comprovar o atendimento aos requisitos aplicáveis, a rastreabilidade das atividades executadas e o devido controle dos processos, produtos e serviços providos externamente.\nAs ações serão evidenciadas por meio dos registros de comunicação dos requisitos à subcontratada, documentos contratuais e/ou técnicos aplicáveis, registros de execução dos serviços, evidências de acompanhamento, inspeções, liberações e demais documentos pertinentes ao controle de fornecedores e subcontratados.",
+      "acoes_exec": "",
+      "checklist": [
+        "Apresentar evidência formal de que os requisitos técnicos, normativos, contratuais e de qualidade foram comunicados à subcontratada INDEX (suportes SPCI).",
+        "Apresentar registros de execução, acompanhamento, inspeções e liberações dos serviços prestados pela INDEX."
+      ],
+      "fontes": {
+        "folder": "RNC-03629-26",
+        "folder_exists": true,
+        "total_files": 0,
+        "total_photos_detected": 0,
+        "files": [],
+        "note": "RNC de auditoria documental / calibragem sem imagens fotográficas anexadas."
+      },
+      "photos": []
+    },
+    {
+      "idx": 27,
+      "codigo": "RNC-03634/26",
+      "safe_code": "RNC-03634-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Qualidade",
+      "tag": "0- Não se aplica",
+      "area": "0 - Não aplicável",
+      "titulo": "Auditoria Parex – Grupo V – 5.1 – Melhoria",
+      "escopo": "A auditoria de verificação, realizada com base em nova amostragem, identificou a recorrência de desvios críticos em áreas essenciais do Sistema de Gestão da Qualidade (SGQ). Tal situação evidencia que as causas raiz previamente identificadas não foram tratadas de forma eficaz, bem como que as ações corretivas implementadas não foram suficientes para eliminar as não conformidades, comprometendo a eficácia do sistema.Evidência da Não Conformidade:Pessoas: Persistem falhas na apresentação de evidências de realização de treinamentos obrigatórios.Recursos de Monitoramento e Medição: Reincidência de falhas no controle e na rastreabilidade dos equipamentos utilizados em medições e ensaios.Controle de Produtos e Serviços Providos Externamente: Mantém-se a ausência de evidências quanto à adequada comunicação de requisitos aplicáveis aos serviços subcontratados.Produção e Provisão de Serviços: Verificada a ausência de informações documentadas disponíveis nas frentes de trabalho.Preservação: Reincidência de falhas nos registros e no controle das atividades de preservação de equipamentos.Liberação de Produtos e Controle de Saídas Não Conformes: Persistem falhas na tratativa e no controle de não conformidades identificadas.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "1. Pessoas – Evidências de Treinamentos Obrigatórios Será realizado treinamento específico com as lideranças, Técnicos de Qualidade, responsável pelo RH e equipe de SSMA, com o objetivo de orientar quanto à correta gestão das evidências de treinamentos obrigatórios. O treinamento abordará a importância do planejamento, execução, controle, arquivamento e disponibilização dos registros de capacitação, assegurando que as evidências estejam completas, rastreáveis e disponíveis para comprovação do atendimento aos requisitos aplicáveis. As ações serão evidenciadas por meio de lista de presença, registro de treinamento, material aplicado e demais registros pertinentes do Sistema de Gestão da Qualidade. 2. Recursos de Monitoramento e Medição Será realizado o levantamento completo dos instrumentos de medição e ensaio calibrados disponíveis na obra, com verificação da identificação, certificado de calibração, data de calibração, validade e condição Auditoria Parex – Grupo V – 5.1 – Melhoria RNC 30/10/2026 09:31:51 Gerado por Gabriel Santos (c0713699@vale.com) Página 5 de 8 de uso. Após o levantamento, será efetuada a atualização do controle de instrumentos no documento FO-03-022 – Planilha de Equipamentos de Medição e Ensaios, garantindo que todos os equipamentos utilizados para medição e monitoramento estejam devidamente cadastrados, rastreados e com suas informações metrológicas atualizadas. Como ação complementar, será realizado treinamento com a equipe de almoxarifado, abordando os critérios para recebimento, armazenamento, controle, liberação e distribuição de instrumentos calibrados para uso em campo, de forma a evitar a utilização de equipamentos não controlados ou sem evidência de calibração vigente. Também será realizado treinamento com a equipe da qualidade, reforçando as responsabilidades quanto ao controle documental, verificação dos certificados, atualização periódica da planilha de instrumentos, monitoramento dos prazos de validade das calibrações e rastreabilidade dos equipamentos utilizados nas atividades de inspeção, medição e ensaio da obra. As ações serão evidenciadas por meio da planilha FO-03-022 atualizada, certificados de calibração disponíveis, lista de presença dos treinamentos, registros fotográficos e demais evidências aplicáveis ao controle metrológico. 3. Controle de Produtos e Serviços Providos Externamente – Comunicação dos Requisitos Aplicáveis Será apresentada a evidência de que os requisitos aplicáveis ao fornecimento foram devidamente comunicados à subcontratada, assegurando que as condições técnicas, documentais, de qualidade e demais requisitos pertinentes aos serviços contratados tenham sido formalmente repassados e compreendidos. Também serão apresentados os registros pertinentes aos serviços prestados pela subcontratada, de forma a comprovar o atendimento aos requisitos aplicáveis, a rastreabilidade das atividades executadas e o devido controle dos processos, produtos e serviços providos externamente. As ações serão evidenciadas por meio dos registros de comunicação dos requisitos à subcontratada, documentos contratuais e/ou técnicos aplicáveis, registros de execução dos serviços, evidências de acompanhamento, inspeções, liberações e demais documentos pertinentes ao controle de fornecedores e subcontratados. 4. Produção e Provisão de Serviços – Informações Documentadas nas Frentes de Trabalho Será realizado treinamento específico com o Encarregado de Almoxarifado e sua equipe, abordando os requisitos do documento IT-012-001_r11 – Recebimento, Armazenamento, Preservação, Manuseio e Expedição. Adicionalmente, será disponibilizado o acesso aos procedimentos e instruções de trabalho aplicáveis às atividades do almoxarifado, garantindo que o encarregado e os colaboradores tenham condições de consultar os documentos vigentes sempre que necessário, assegurando o correto entendimento e cumprimento dos requisitos estabelecidos. As ações serão evidenciadas por meio de lista de presença, registro de treinamento, disponibilização dos procedimentos aplicáveis e demais registros pertinentes do Sistema de Gestão da Qualidade. 5. Preservação – Registros e Controle das Atividades de Preservação de Equipamentos Auditoria Parex – Grupo V – 5.1 – Melhoria RNC 30/10/2026 09:31:51 Gerado por Gabriel Santos (c0713699@vale.com) Página 6 de 8 Será realizada a atualização do modelo de etiqueta/tag de preservação utilizado em campo, contemplando campos padronizados para identificação do equipamento, TAG, data da preservação, número do relatório de preservação e revisão aplicável. O novo modelo deverá garantir que as datas e os números dos relatórios estejam sempre atualizados conforme a última revisão do relatório de preservação aprovada no sistema, assegurando maior clareza, rastreabilidade e confiabilidade das informações apresentadas nas frentes de serviço. Também será realizada a verificação das etiquetas já aplicadas nos equipamentos abrangidos pela não conformidade, com atualização das informações quando necessário, garantindo a compatibilidade entre o controle de preservação, os relatórios aprovados e a identificação física em campo. As ações executadas serão evidenciadas por meio da atualização do modelo de etiqueta/tag, registros de revisão das informações e registros fotográficos das etiquetas corrigidas em campo. 6. Liberação de Produtos e Controle de Saídas Não Conformes Será realizado treinamento específico com a equipe da Qualidade, abordando os critérios para análise, elaboração de propostas de solução, definição de disposição, investigação de causa raiz e acompanhamento das ações corretivas relacionadas às não conformidades identificadas. O treinamento terá como objetivo reforçar a padronização das tratativas de não conformidades, assegurando que as análises sejam realizadas de forma técnica, estruturada e eficaz, com foco na eliminação das causas dos desvios, prevenção de recorrências e fortalecimento do Sistema de Gestão da Qualidade. As ações serão evidenciadas por meio de lista de presença, registro de treinamento, material aplicado, registros de análise de causa raiz, propostas de solução e demais evidências aplicáveis às tratativas de não conformidades.",
+      "acoes_exec": "",
+      "checklist": [
+        "Pessoas: Treinar lideranças, TQs, RH e SSMA na gestão de evidências de treinamentos obrigatórios (lista de presença/material).",
+        "Monitoramento/Medição: Atualizar planilha FO-03-022 com certificados válidos e treinar Almoxarifado e Qualidade.",
+        "Externos: Evidenciar comunicação formal de requisitos e registros de inspeção das subcontratadas.",
+        "Produção/Provisão: Treinar Almoxarifado no IT-012-001_r11 e disponibilizar procedimentos nas frentes de trabalho.",
+        "Preservação: Atualizar modelo de etiqueta/tag de preservação e conferir/atualizar etiquetas aplicadas em campo.",
+        "Saídas Não Conformes: Treinar equipe da Qualidade em causa raiz, disposições e eficácia de tratativas de RNC."
+      ],
+      "fontes": {
+        "folder": "RNC-03634-26",
+        "folder_exists": true,
+        "total_files": 0,
+        "total_photos_detected": 0,
+        "files": [],
+        "note": "RNC de auditoria documental / calibragem sem imagens fotográficas anexadas."
+      },
+      "photos": []
+    },
+    {
+      "idx": 28,
+      "codigo": "RNC-03778/26",
+      "safe_code": "RNC-03778-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Izaac Pio de Moura Barroso",
+      "disciplina": "Materiais",
+      "tag": "ED-1331KN-01",
+      "area": "1331KN - BRITAGEM E PENEIRAMENTO TERCIARIO ANEXO",
+      "titulo": "Armazenamento e Preservação de Ativos.",
+      "escopo": "Durante fiscalização em campo, foi identificado desvios relevantes no armazenamento e preservação das mãos francesas e nervuras. As mesmas se encontram dispostas diretamente nas chapas de piso do prédio 1310KN-01, EL. 511.600. Sem o devido apoio de calços ou cavaletes conforme previstos no procedimento aplicável.Algumas sem aplicação do verniz anticorrosivo. Descumprindo assim normas e procedimentos vigentes.Estando inconforme.Documentos de referência: IT-08-071-PP Rev.0.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A parex reconhece o desvio de preservação conforme requisto:\n5.1.10. É desejável que chapas e barras de aço, tubos, perfis e cantoneiras sejam separados por tipo, espessura e diâmetro (conforme o caso) e que sejam armazenados sobre brita, calços de madeira e / ou cavaletes. 9.6.1. Todas as peças usinadas deverão ser protegidas com produto anti oxidante, e renovados a cada 6 meses.\n\n\nSerá realizada a preservação das mãos francesas que se encontravam armazenadas e aguardando aplicação em campo.\nTambém será conduzido um levantamento geral das condições de preservação dos materiais e componentes destinados à aplicação nas diferentes elevações, com o objetivo de identificar eventuais necessidades de adequação e garantir sua integridade até o momento da instalação.\nComo ação preventiva, será realizada uma conscientização com todo o efetivo da obra, por meio de Diálogo de Segurança, abordando as boas práticas de armazenamento, manuseio e preservação de materiais. A atividade será acompanhada pelas equipes de Implantação e Qualidade da Vale e está previamente programada para o dia 05/08/2026.",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar preservação das mãos francesas e nervuras na EL. 511,600 (apoio sobre calços/cavaletes e verniz antioxidante conf. IT-08-071-PP Rev.0).",
+        "Realizar levantamento geral das condições de preservação dos materiais nas diferentes elevações e adequar desvios.",
+        "Realizar DDS de conscientização com o efetivo sobre armazenamento, manuseio e preservação (com registro)."
+      ],
+      "fontes": {
+        "folder": "RNC-03778-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 5,
+        "files": [
+          "RNC_03778_26.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-03778-26 (5 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-03778-26_01.jpg",
+          "caption": "RNC_03778_26.pdf — Preservação EL. 511,600 (p.1/3)",
+          "source_file": "RNC_03778_26.pdf"
+        },
+        {
+          "src": "photos/RNC-03778-26_02.jpg",
+          "caption": "RNC_03778_26.pdf — Preservação EL. 511,600 (p.2/3)",
+          "source_file": "RNC_03778_26.pdf"
+        },
+        {
+          "src": "photos/RNC-03778-26_03.jpg",
+          "caption": "RNC_03778_26.pdf — Preservação EL. 511,600 (p.3/3)",
+          "source_file": "RNC_03778_26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 29,
+      "codigo": "RNC-04473/26",
+      "safe_code": "RNC-04473-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Estruturas metálicas",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Ausência de furação para fixação da tala de ligação da viga 01ED01E0149A com a coluna 01ED01C0002A",
+      "escopo": "Durante a inspeção de campo, constatou-se a ausência do furo de fixação para um dos parafusos na tala de ligação entre a viga 01ED01E0149A e a coluna 01ED01C0002A, projeto 1310KN-S-500991_Rev_2, o que impede o torqueamento/montagem correta da ligação estrutural. Evidências conforme relatório fotográfico RF-354 em anexo.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Executar a furação pendente conforme especificado no projeto. Alinhar com a equipe da Qualidade os procedimentos, critérios e métodos a serem adotados para a execução da furação, garantindo conformidade com os requisitos técnicos aplicáveis.\n\n\n* Será realizada aplicação da furação, conforme dcc de projeto \n* Após furação aplicar parafuso conforme projeto.",
+      "acoes_exec": "",
+      "checklist": [
+        "Alinhar com a Qualidade os critérios e procedimentos para execução da furação pendente na tala de ligação (01ED01E0149A × 01ED01C0002A).",
+        "Executar a furação pendente conforme projeto (1310KN-S-500991 Rev.2) e aplicar/torquear o parafuso correspondente.",
+        "Emitir registro fotográfico e de inspeção/torque comprovando a conclusão."
+      ],
+      "fontes": {
+        "folder": "RNC-04473-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 2,
+        "files": [
+          "RF-354-26 - ABERTURA DE RNC 04473-26.pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-04473-26 (2 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-04473-26_01.jpg",
+          "caption": "RF-354-26 — Tala sem furação 01ED01E0149A (p.1/1)",
+          "source_file": "RF-354-26 - ABERTURA DE RNC 04473-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 30,
+      "codigo": "RNC-04531/26",
+      "safe_code": "RNC-04531-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica/ Equipamentos",
+      "tag": "TR-1310KN-128",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "AUSÊNCIA DE PRESERVAÇÃO DE EQUIPAMENTOS (TAMBOR DE DESCARGA - TAG- TR-1310KN-128).",
+      "escopo": "TAMBOR DE DESCARGA - TAG- TR-1310KN-128Durante uma inspeção de rotina, foi constatado, no PENEIRAMENTO SECUNDÁRIO NOVO ANEXO, na área de içamentos, dois tambores encontravam-se sem lona de proteção e sem dispositivos de proteção contra impactos e intempéries. Essa condição expõe os equipamentos a danos, podendo comprometer sua integridade e reduzir sua vida útil.Normas, procedimentos e/ou projetos de referência. Instrução de Armazenamento - ET-PROR-015 Rev. 008 (PROK)",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A parex reconhece o desvio quanto atendimento ao requisito: ET-PROR-015 rev 05\nItem 2.3.1 - Armazenamento de tambores a longo prazo.a) Tambor padrão, peso abaixo de 15 T, Conjunto completo:Devem ser estocados em local seco, coberto, seguro, arejado, limpo, protegido de intempéries. Um galpão coberto seria a locação ideal. O tambor deve permanecer em sua embalagem original.Os mancais deverão ser totalmente preenchidos com graxa de boa qualidade, alta viscosidade e excelente resistência à água (preferencialmente NLG| 3).A cada três meses os mancais devem ser girados. Nesta ocasião, realizar pelo menos cinco revoluções completas.Partes expostas do eixo do tambor deverão ser cobertas, anualmente com protetivo inibidor de corrosão (Tecnofluid - BQ70 ou equivalente).O tambor também deve ser girado para evitar deformação permanente da parte do revestimento em contato com o berço.A proteção plástica deverá ser recomposta após giro dos mancais, em caso do fornecimento sem embalagens plásticas cobrir com lona.\n\n\n* Será realizada preservação dos ativos\n* Emissão dos registros da qualidade pertinentes a preservação\n* Concientização sobre preservação - Ministrado pelo Engenheiro da qualidade a todo efetivo.",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar preservação completa dos 2 tambores de descarga do TR-1310KN-128 na área de içamentos (ET-PROR-015 Rev.05 item 2.3.1: lona/embalagem, mancais, giro e protetivo).",
+        "Emitir registros de qualidade pertinentes à preservação executada e evidência fotográfica.",
+        "Realizar conscientização sobre preservação ministrada pelo Engenheiro da Qualidade ao efetivo (lista de presença)."
+      ],
+      "fontes": {
+        "folder": "RNC-04531-26",
+        "folder_exists": true,
+        "total_files": 1,
+        "total_photos_detected": 4,
+        "files": [
+          "SQUAD 1 - RNC- FALTA DE PRESERVAÇÃO DO TAMBOR DE DESCARGA (TR-1310KN-128).pdf"
+        ],
+        "note": "1 arquivo(s) na pasta RNC-04531-26 (4 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-04531-26_01.jpg",
+          "caption": "SQUAD 1 — Tambor descarga TR-1310KN-128 (p.1/1)",
+          "source_file": "SQUAD 1 - RNC- FALTA DE PRESERVAÇÃO DO TAMBOR DE DESCARGA (TR-1310KN-128).pdf"
+        }
+      ]
+    },
+    {
+      "idx": 31,
+      "codigo": "RNC-04551/26",
+      "safe_code": "RNC-04551-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "2 - Normal",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Interferência entre o reforço 03ED01C5630A da viga 01ED01C0101A e o leito de cabos elétrico – Prédio ED-1310KN-01 Entre Fila C e D, Eixo 7",
+      "escopo": "Durante inspeção realizada no Prédio ED-1310KN-01, foi identificada, na região compreendida entre as Filas C e D, Eixo 7elevação 508,600, uma interferência física entre o reforço previsto para a viga e o leito de cabos elétrico instalado no local.Na configuração atual, o posicionamento do leito de cabos ocupa a região necessária para a montagem e soldagem do reforço estrutural, impossibilitando a execução do serviço.Projeto referencia: 1310KN-S-501066 rev 1 e 1310KN-E-500096 REV 8EVIDENCIA: RF-365 EM ANEXO",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Seguir conforme o croqui em anexo. \n\n\nSerá realizado o corte e a instalação dos reforços nos perfis tipo “T”, localizado no eixo 7, fila C, elevação 508.600, conforme detalhamento e orientações estabelecidas no croqui anexo, elaborado pela Engenharia VALE",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar corte e instalação dos reforços 03ED01C5630A nos perfis 'T' da viga 01ED01C0101A (Eixo 7, Fila C–D, EL. 508,600) conforme croqui Vale (SI-1310KN-S-510035).",
+        "Inspecionar soldagem/montagem garantindo integridade do leito de cabos (YM-010, YB-0103, YC/I-0133) e emitir relatório fotográfico."
+      ],
+      "fontes": {
+        "folder": "RNC-04551-26",
+        "folder_exists": true,
+        "total_files": 3,
+        "total_photos_detected": 6,
+        "files": [
+          "Detalhe Recomposição WT Plataforma EL 508600_SI-1310KN-S-510035.dwg",
+          "RES_ REFORÇOS PENEIRAMENTO SECUNDÁRIO..eml",
+          "RF-365-26.pdf"
+        ],
+        "note": "3 arquivo(s) na pasta RNC-04551-26 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-04551-26_01.jpg",
+          "caption": "RF-365-26.pdf — Interferência Eixo 7 EL. 508,600 (p.1/2)",
+          "source_file": "RF-365-26.pdf"
+        },
+        {
+          "src": "photos/RNC-04551-26_02.jpg",
+          "caption": "RF-365-26.pdf — Interferência Eixo 7 EL. 508,600 (p.2/2)",
+          "source_file": "RF-365-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 32,
+      "codigo": "RNC-04618/26",
+      "safe_code": "RNC-04618-26",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "4 - Não definida",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Mecânica",
+      "tag": "ED-1310KN-01",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Interferência entre o reforço 03ED01C5630A da viga 01ED01C0100A e o leito de cabos elétrico – Prédio ED-1310KN-01 Entre Fila C e D, Eixo 6",
+      "escopo": "Durante inspeção realizada no Prédio ED-1310KN-01, foi identificada, na região compreendida entre as Filas C e D, Eixo 6 elevação 508,600, uma interferência física entre o reforço previsto para a viga e o leito de cabos elétrico instalado no local.Na configuração atual, o posicionamento do leito de cabos ocupa a região necessária para a montagem e soldagem do reforço estrutural, impossibilitando a execução do serviço.Projeto referencia: 1310KN-S-501065 rev 1 e 1310KN-E-500096 REV 8EVIDENCIA: RF-366 EM ANEXO",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de  reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "Seguir conforme croqui em anexo. \n\n\nSerá realizado o corte e a instalação dos reforços nos perfis tipo “T”, localizado no eixo 7, fila C, elevação 508.600, conforme detalhamento e orientações estabelecidas no croqui anexo, elaborado pela Engenharia VALE",
+      "acoes_exec": "",
+      "checklist": [
+        "Executar corte e instalação dos reforços 03ED01C5630A nos perfis 'T' da viga 01ED01C0100A (Eixo 6/7, Fila C–D, EL. 508,600) conforme croqui Vale (SI-1310KN-S-510035).",
+        "Inspecionar soldagem/montagem sem interferência com o leito de cabos e emitir relatório fotográfico."
+      ],
+      "fontes": {
+        "folder": "RNC-04618-26",
+        "folder_exists": true,
+        "total_files": 3,
+        "total_photos_detected": 6,
+        "files": [
+          "Detalhe Recomposição WT Plataforma EL 508600_SI-1310KN-S-510035.dwg",
+          "RES_ REFORÇOS PENEIRAMENTO SECUNDÁRIO..eml",
+          "RF-366-26.pdf"
+        ],
+        "note": "3 arquivo(s) na pasta RNC-04618-26 (6 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-04618-26_01.jpg",
+          "caption": "RF-366-26.pdf — Interferência Eixo 6 EL. 508,600 (p.1/2)",
+          "source_file": "RF-366-26.pdf"
+        },
+        {
+          "src": "photos/RNC-04618-26_02.jpg",
+          "caption": "RF-366-26.pdf — Interferência Eixo 6 EL. 508,600 (p.2/2)",
+          "source_file": "RF-366-26.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 33,
+      "codigo": "RNC-07722/25",
+      "safe_code": "RNC-07722-25",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Qualidade",
+      "tag": "SI-1310KN-124: Silo",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Aplicação de arame tubular na soldagem do SI-1310KN-124 sem realizar o processo de recebimento.",
+      "escopo": "Foi constatada a utilização das bobinas de arame tubular dos lotes nº HY24052120 e HY2502210 no interior do SI-1310KN-124 do novo prédio do peneiramento II, sem que houvesse a inspeção de recebimento por parte de um inspetor de solda N1. Esse material foi utilizado no processo de soldagem FCAW na união horizontal entre os módulos 792A e 793A (módulos 4 e 5). Essa ocorrência evidencia uma infração ao PIT no item 1.7, que trata da aprovação do recebimento dos consumíveis de soldagem para a execução.Documentos de referência:1310KN-M-500847_rev.0",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A Parex reconhece o desvio ao requisito:\n1.7 Recebimento de consumíveis de soldagem / PI-1000KN-Q-500004\n  Inspeção Quantitativa• Inspeção qualitativa - especificação / Classificação AWS / visual / dimensional• Verificação da integridade da embalagem/ consumível• Conferência do certificado da qualidade• Verificação das condições de armazenamento e preservação\n\n\nRealizar treinamento com a equipe do Almoxarifado sobre o procedimento adequado para recebimento, armazenamento, controle e distribuição dos consumíveis. Apresentar, também, as evidências documentais de recebimento dos seguintes consumíveis:\nO lote HY24052120 \nO lote HY25022120",
+      "acoes_exec": "",
+      "checklist": [
+        "Treinar equipe do Almoxarifado no recebimento, armazenamento, controle e distribuição de consumíveis de soldagem (PI-1000KN-Q-500004 item 1.7).",
+        "Apresentar evidências documentais de recebimento/inspeção N1 e certificados dos lotes de arame tubular HY24052120 e HY25022120 (HY2502210)."
+      ],
+      "fontes": {
+        "folder": "RNC-07722-25",
+        "folder_exists": true,
+        "total_files": 4,
+        "total_photos_detected": 59,
+        "files": [
+          "ANEXO_NC-07722_25.pdf",
+          "FLUXOGRAMA RECEBIMENTOS.pdf",
+          "RC-003-25.pdf",
+          "RC-005-25.pdf"
+        ],
+        "note": "4 arquivo(s) na pasta RNC-07722-25 (59 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-07722-25_01.jpg",
+          "caption": "ANEXO_NC-07722_25.pdf — Bobinas arame tubular SI-1310KN-124 (p.1/1)",
+          "source_file": "ANEXO_NC-07722_25.pdf"
+        },
+        {
+          "src": "photos/RNC-07722-25_02.jpg",
+          "caption": "FLUXOGRAMA RECEBIMENTOS.pdf (p.1/1)",
+          "source_file": "FLUXOGRAMA RECEBIMENTOS.pdf"
+        }
+      ]
+    },
+    {
+      "idx": 34,
+      "codigo": "RNC-08452/25",
+      "safe_code": "RNC-08452-25",
+      "bloco": "C",
+      "bloco_label": "DEZ/2026",
+      "prazo": "31/12/2026",
+      "prazo_iso": "2026-12-31",
+      "dias_delta": 45,
+      "status_extrato": "Em dia",
+      "critica": "Não crítica preliminar",
+      "prioridade": "1 - Alta",
+      "responsavel": "Parex Engenharia S A",
+      "disciplina": "Elétrica",
+      "tag": "SE-1310KN-10: Subestação 1310",
+      "area": "1310KN - PENEIRAMENTO SECUNDARIO",
+      "titulo": "Relatórios de Cabos de Controle e Instrumentação com inconsistência na rastreabilidade do instrumento da SE-1310KN-10.",
+      "escopo": "Os relatórios de Cabos de Controle e Instrumentação foram analisados pela fiscalização da qualidade (Vale/Progen), onde foi identificada uma falta de rastreabilidade do instrumento utilizado e a data de validade, que expirou em 23.03.24, conforme ilustrado no anexo. Essas questões resultaram na rejeição dos relatórios. Configura uma infração ao Plano da Qualidade PL-1320KN-Q-500001 rev. 0, especificamente no subitem 6.1.4, que trata dos recursos de monitoramento e medição.Ponto de atenção:Os relatórios de cabos de controle e instrumentação foram: RCCI-008, 009, 010, 011, 012, 013, 014, 015, 016, 017 e 018.",
+      "proposta_tipo": "Reparar/Retrabalhar/Novo Ensaio: Realizar algum tipo de reparo, retrabalho ou novo ensaio em uma estrutura/equipamento/material, sem a necessidade de troca-lo.",
+      "proposta": "A parex reconhece o desvio no item 6.1.4 do plano da qualidade PL-1320KN-Q-500001 rev 0\n6.1.4 Recursos de monitoramento e medição: \nOs equipamentos utilizados para inspeção e ensaios, nas etapas onde é necessário evidenciar a conformidade do produto com os requisitos especificados, são devidamente controlados, identificados e calibrados. A PAREX ENGENHARIA/ LOGISTICA é responsável pelo controle e calibração dos instrumentos de medição, utilizados nas inspeções. Os laudos das calibrações são analisados criticamente pelo Controle da Qualidade dos Projetos e/ou Corporativa, com o apoio das áreas técnicas se necessário, antes da liberação do instrumento para utilização, garantindo que o serviço de calibração atenda as exigências especificadas para a qualidade e confiabilidade dos resultados. \n\n\nPara mitigar a reincidência do desvio e garantir a conformidade dos processos de medição e monitoramento, serão adotadas as seguintes ações:\n\nTreinamento de Reciclagem: Realização de treinamento com a equipe de Qualidade e Elétrica em Boas Práticas para Emissão de Relatórios e no controle de documentações vigentes vs. obsoletas.\nCorreção de Documentos: Revisão e correção de todos os relatórios impactados (RCCI-008 ao 018), agora acompanhados dos certificados de calibração corretos e dentro do prazo de validade.\nControle de Ativos: Apresentação do Mapa de Instrumentos Calibrados atualizado, servindo como ferramenta de consulta rápida para a fiscalização e para o controle interno da Parex Engenharia.\nEvidências Anexas: Inclusão dos relatórios corrigidos para validação da Vale, juntamente com as listas de presença e relatorio fotografico do treinamento realizado.",
+      "acoes_exec": "",
+      "checklist": [
+        "Revisar e corrigir todos os relatórios RCCI-008 ao RCCI-018 com certificados de calibração válidos e rastreabilidade correta (PL-1320KN-Q-500001 item 6.1.4).",
+        "Apresentar Mapa de Instrumentos Calibrados atualizado para consulta da fiscalização.",
+        "Realizar treinamento de reciclagem (Qualidade e Elétrica) em Boas Práticas de Emissão de Relatórios e controle documental (anexar listas e fotos)."
+      ],
+      "fontes": {
+        "folder": "RNC-08452-25",
+        "folder_exists": true,
+        "total_files": 15,
+        "total_photos_detected": 47,
+        "files": [
+          "23797.pdf",
+          "ANEXO_NC_08452_25.pdf",
+          "PX 23797.pdf",
+          "RCCI-008 LB-1310KN-E-500022 R06 - DI-1310KN-J-500080 R05.pdf",
+          "RCCI-008@018_Rep..pdf",
+          "RCCI-009 LB-1310KN-E-500022 R06 - DI-1310KN-J-500080 R05.pdf",
+          "RCCI-010 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-011 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-012 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-013 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-014 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-015 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-016 LB-1310KN-E-500004 R04 - DI-1310KN-J-500078 R00.pdf",
+          "RCCI-017 DI-1310KN-J-500143 R03.pdf",
+          "RCCI-018 DI-1310KN-J-500137 R03.pdf"
+        ],
+        "note": "15 arquivo(s) na pasta RNC-08452-25 (47 imagens detectadas)."
+      },
+      "photos": [
+        {
+          "src": "photos/RNC-08452-25_01.jpg",
+          "caption": "ANEXO_NC_08452_25.pdf — Rastreabilidade RCCI (p.1/2)",
+          "source_file": "ANEXO_NC_08452_25.pdf"
+        },
+        {
+          "src": "photos/RNC-08452-25_02.jpg",
+          "caption": "ANEXO_NC_08452_25.pdf — Rastreabilidade RCCI (p.2/2)",
+          "source_file": "ANEXO_NC_08452_25.pdf"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>PAREX Campo — Verificação RNCs IAPC (N1341)</title>
+  <meta name="description" content="Relatório de verificação em campo das 34 RNCs com impacto no IAPC (Vencidas, Nov/26 e Dez/26) — Parex Engenharia S.A." />
+  <meta name="theme-color" content="#002D72" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="PAREX IAPC" />
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Tipografia Oficial Brandbook PAREX (pp. 44-45): Outfit + Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="assets/vendor/jspdf.umd.min.js" defer></script>
+  <script src="pdf-export.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP HEADER (Navy Pantone 288 C + Orange 1505 C + Logo Fonte Negativa) -->
+  <header class="app-header">
+    <div class="header-top">
+      <div class="brand-lockup">
+        <img src="assets/parex-logo-negativa.png" alt="PAREX Engenharia" class="brand-logo-neg" />
+      </div>
+      <div class="header-actions">
+        <button id="btn-open-install" class="btn-install-pill" type="button">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          Instalar App
+        </button>
+        <button id="btn-offline-menu" class="btn-icon-ghost" type="button" title="Offline e Backup">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="header-subrow">
+      <div class="header-title-block">
+        <h1>VERIFICAÇÃO EM CAMPO — RNCs IAPC</h1>
+        <p id="header-meta-sub">Projeto N1341 • Extrato 16/11/2026 • Contrato 5900110079</p>
+      </div>
+      <div class="progress-pill" id="header-progress-pill">0 / 34 vist.</div>
+    </div>
+  </header>
+
+  <!-- MAIN SHELL -->
+  <main class="main-shell">
+    <!-- KPI Grid -->
+    <section class="kpi-grid" aria-label="Indicadores IAPC">
+      <div class="kpi-card kpi-cyan">
+        <div class="kpi-label">IAPC Atual</div>
+        <div class="kpi-value" id="kpi-iapc">93,90%</div>
+        <div class="kpi-sub">77/82 em dia • Meta 70%</div>
+      </div>
+      <div class="kpi-card kpi-red">
+        <div class="kpi-label">Risco Nov+Dez</div>
+        <div class="kpi-value">58,54%</div>
+        <div class="kpi-sub">Se sem baixas (-11,46 p.p.)</div>
+      </div>
+      <div class="kpi-card kpi-orange">
+        <div class="kpi-label">Vencidas + Nov</div>
+        <div class="kpi-value">5 + 10</div>
+        <div class="kpi-sub">15 RNCs prioridade imediata</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Dezembro/26</div>
+        <div class="kpi-value">19 RNCs</div>
+        <div class="kpi-sub">Prazo 04/12 a 31/12/2026</div>
+      </div>
+    </section>
+
+    <!-- Live Audit Progress -->
+    <section class="field-progress-card">
+      <div class="progress-head">
+        <span>Progresso da Auditoria em Campo</span>
+        <span id="progress-pct-label">0% concluído (0/34)</span>
+      </div>
+      <div class="progress-track">
+        <div class="seg-ok" id="seg-ok" style="width: 0%"></div>
+        <div class="seg-parcial" id="seg-parcial" style="width: 0%"></div>
+        <div class="seg-nao" id="seg-nao" style="width: 0%"></div>
+      </div>
+      <div class="progress-legend">
+        <span><i class="leg-dot" style="background: var(--status-green)"></i>Executado: <strong id="cnt-ok">0</strong></span>
+        <span><i class="leg-dot" style="background: var(--parex-orange)"></i>Parcial: <strong id="cnt-parcial">0</strong></span>
+        <span><i class="leg-dot" style="background: var(--status-red)"></i>Não Exec.: <strong id="cnt-nao">0</strong></span>
+        <span><i class="leg-dot" style="background: #CBD5E1"></i>Pendente: <strong id="cnt-pend">34</strong></span>
+      </div>
+    </section>
+
+    <!-- Filters & Search -->
+    <section class="filter-panel">
+      <div class="bloco-tabs" role="tablist">
+        <button class="tab-btn active" data-bloco="ALL" type="button">Todas<span>34 RNCs</span></button>
+        <button class="tab-btn tab-vencidas" data-bloco="A" type="button">Vencidas<span>5</span></button>
+        <button class="tab-btn tab-nov" data-bloco="B" type="button">Nov/26<span>10</span></button>
+        <button class="tab-btn" data-bloco="C" type="button">Dez/26<span>19</span></button>
+      </div>
+      <div class="search-filter-row">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input id="search-input" class="input-ctrl" type="search" placeholder="Buscar RNC, TAG, área ou palavra..." />
+        </div>
+        <select id="filter-verdict" class="select-ctrl">
+          <option value="ALL">Status Campo: Todos</option>
+          <option value="PEND">Pendente de vistoria</option>
+          <option value="ok">Executado (OK)</option>
+          <option value="parcial">Parcial / Com pendência</option>
+          <option value="nao">Não Executado</option>
+        </select>
+        <select id="filter-disc" class="select-ctrl">
+          <option value="ALL">Disciplina: Todas</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="results-count">
+      <span id="results-label">Exibindo 34 RNCs</span>
+      <span id="save-indicator">Salvo no aparelho</span>
+    </div>
+
+    <!-- RNC Cards List -->
+    <section id="rnc-list" class="rnc-list"></section>
+  </main>
+
+  <!-- STICKY BOTTOM DOCK (EXPORT PDF & WHATSAPP CONSOLIDADO) -->
+  <div class="bottom-dock">
+    <div class="bottom-dock-inner">
+      <button id="btn-export-pdf-modal" class="btn btn-navy" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/><path d="M9 11h6"/></svg>
+        Exportar PDF
+      </button>
+      <button id="btn-whatsapp-summary" class="btn btn-whatsapp" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.93 9.93 0 00-8.48 15.14L2 22l5-1.31A9.94 9.94 0 1012.04 2zm5.79 14.08c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.66-.61-2.92-1.26-4.82-4.2-4.96-4.39-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.59-.36.79-.36h.57c.18 0 .43-.07.67.51.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg>
+        WhatsApp
+      </button>
+      <button id="btn-scroll-top" class="btn btn-outline" type="button" title="Topo" style="padding:0 12px">↑</button>
+    </div>
+  </div>
+
+  <!-- SLIDE-OVER VERIFICATION SHEET (FICHA INDIVIDUAL RNC) -->
+  <div id="rnc-sheet" class="sheet-overlay" aria-hidden="true">
+    <div class="sheet-panel">
+      <div class="sheet-header">
+        <div class="sheet-header-left">
+          <button id="sheet-close" class="sheet-back-btn" type="button" aria-label="Voltar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5m7 7l-7-7 7-7"/></svg>
+          </button>
+          <div class="sheet-title-wrap">
+            <h2 id="sheet-code">RNC-09829/25</h2>
+            <p id="sheet-subtitle">VENCIDA • Prazo 20/01/2026</p>
+          </div>
+        </div>
+        <div class="dot-matrix-3x2" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div id="sheet-body" class="sheet-body">
+        <!-- Populated dynamically by app.js -->
+      </div>
+
+      <div class="sheet-footer">
+        <button id="sheet-btn-pdf" class="btn btn-navy" type="button">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+          PDF RNC
+        </button>
+        <button id="sheet-btn-wpp" class="btn btn-whatsapp" type="button">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.93 9.93 0 00-8.48 15.14L2 22l5-1.31A9.94 9.94 0 1012.04 2zm5.79 14.08c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.66-.61-2.92-1.26-4.82-4.2-4.96-4.39-.14-.19-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.59-.36.79-.36h.57c.18 0 .43-.07.67.51.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg>
+          WhatsApp
+        </button>
+        <button id="sheet-btn-next" class="btn btn-orange" type="button">Próx →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTALL PWA MODAL (ABRE AUTOMATICAMENTE NO CELULAR AO ACESSAR O LINK) -->
+  <div id="install-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="install-title">
+    <div class="modal-card">
+      <div class="modal-hero-navy">
+        <div class="modal-hero-row">
+          <img src="assets/icon-192.png" alt="Ícone PAREX IAPC" class="modal-hero-icon" />
+          <div>
+            <h3 id="install-title">Instalar PAREX Campo IAPC</h3>
+            <p>Acesse as 34 RNCs e fotos direto da tela inicial do celular, mesmo sem sinal na área.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div id="install-instructions" class="install-steps">
+          <!-- Populated for Android Chrome vs iPhone Safari -->
+        </div>
+        <div class="modal-btn-stack">
+          <button id="btn-trigger-native-install" class="btn btn-orange" type="button">
+            Instalar Aplicativo no Celular
+          </button>
+          <button id="btn-dismiss-install" class="btn btn-outline" type="button">
+            Continuar no navegador
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPORT MODAL (PDF CONSOLIDADO + WHATSAPP + COMPARTILHAR ARQUIVO) -->
+  <div id="export-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-hero-navy">
+        <div class="modal-hero-row">
+          <img src="assets/icon-192.png" alt="PAREX" class="modal-hero-icon" style="width:42px;height:42px" />
+          <div>
+            <h3>Exportar Relatório em PDF</h3>
+            <p>Inclui marcações de checklist, pendências e fotos no padrão Brandbook PAREX.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-btn-stack">
+          <button id="btn-pdf-filtered" class="btn btn-navy" type="button">
+            PDF do Filtro Atual (<span id="export-count-filtered">34</span> RNCs + Fichas)
+          </button>
+          <button id="btn-pdf-summary-only" class="btn btn-outline" type="button">
+            PDF Apenas Resumo + Índice IAPC (Rápido)
+          </button>
+          <button id="btn-pdf-pending-only" class="btn btn-orange" type="button">
+            PDF Somente Não Exec. / Parciais
+          </button>
+          <button id="btn-close-export" class="btn btn-outline" type="button">Fechar</button>
+        </div>
+        <p id="export-status-msg" style="margin:10px 0 0;font-size:12px;color:var(--parex-muted);text-align:center;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFLINE & BACKUP MODAL -->
+  <div id="offline-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-hero-navy">
+        <div class="modal-hero-row">
+          <img src="assets/icon-192.png" alt="PAREX" class="modal-hero-icon" style="width:42px;height:42px" />
+          <div>
+            <h3>Uso Offline e Backup de Campo</h3>
+            <p>Salve as 66 fotos no aparelho antes de ir para a planta N1341.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-btn-stack">
+          <button id="btn-cache-all-photos" class="btn btn-navy" type="button">
+            Baixar Todas as 66 Fotos Offline (~13 MB)
+          </button>
+          <button id="btn-export-json" class="btn btn-outline" type="button">
+            Exportar Backup JSON das Marcações
+          </button>
+          <label class="btn btn-outline" style="cursor:pointer;">
+            Importar Backup JSON
+            <input id="input-import-json" type="file" accept="application/json" style="display:none" />
+          </label>
+          <button id="btn-clear-marks" class="btn btn-outline" style="color:var(--status-red);border-color:#F5B2AC" type="button">
+            Limpar Todas as Marcações
+          </button>
+          <button id="btn-close-offline" class="btn btn-outline" type="button">Fechar</button>
+        </div>
+        <p id="offline-status-msg" style="margin:10px 0 0;font-size:12px;color:var(--parex-muted);text-align:center;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX DE FOTOS -->
+  <div id="lightbox" class="lightbox-backdrop">
+    <div class="lightbox-top">
+      <span id="lightbox-counter">Foto 1 / 1</span>
+      <button id="lightbox-close" class="lightbox-close" type="button">Fechar ✕</button>
+    </div>
+    <div class="lightbox-stage">
+      <img id="lightbox-img" src="" alt="Evidência RNC" />
+    </div>
+    <div class="lightbox-bottom">
+      <span id="lightbox-caption">Legenda</span>
+      <div class="lightbox-nav">
+        <button id="lightbox-prev" class="lightbox-close" type="button">‹ Ant</button>
+        <button id="lightbox-next" class="lightbox-close" type="button">Próx ›</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHARE GENERATED PDF MODAL (MOBILE WHATSAPP / SYSTEM SHARE) -->
+  <div id="pdf-ready-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-hero-navy">
+        <div class="modal-hero-row">
+          <img src="assets/icon-192.png" alt="PAREX" class="modal-hero-icon" style="width:42px;height:42px" />
+          <div>
+            <h3>PDF A4 Gerado com Sucesso</h3>
+            <p id="pdf-ready-fname">Verificacao_RNC.pdf</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-btn-stack">
+          <button id="btn-share-pdf-native" class="btn btn-whatsapp" type="button">
+            Enviar PDF pelo WhatsApp / Compartilhar
+          </button>
+          <button id="btn-redownload-pdf" class="btn btn-navy" type="button">
+            Baixar PDF Novamente
+          </button>
+          <button id="btn-close-pdf-ready" class="btn btn-outline" type="button">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
