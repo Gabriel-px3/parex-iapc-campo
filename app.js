@@ -3,13 +3,20 @@
    ============================================================================ */
 
 const STORAGE_KEY = 'parex_iapc_campo_v1';
+const PENDING_SYNC_KEY = 'parex_iapc_pending_sync_v1';
 const LAST_INSPECTOR_KEY = 'parex_iapc_last_inspector';
 const INSTALL_DISMISSED_KEY = 'parex_iapc_install_dismissed_session';
 const DB_NAME = 'parex_iapc_field_photos_db';
 const DB_STORE = 'field_photos';
 
+const SUPABASE_URL = 'https://croedunritaqeegbzxus.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_FlFd0Tr7SbNaI5yhuv839A_-0IBVIjh';
+
 let DATA = { meta: {}, rncs: [] };
 let STATE = {}; // { [codigo]: { verdict: 'ok'|'parcial'|'nao'|'', checks: [], gap: '', inspector: '', date: '', updatedAt: '' } }
+let PENDING_SYNC = new Set();
+let syncDebounceTimers = {};
+let cloudReady = false;
 let activeBloco = 'ALL';
 let currentRncCode = null;
 let deferredInstallPrompt = null;
@@ -102,6 +109,185 @@ function loadState() {
     STATE = raw ? JSON.parse(raw) : {};
   } catch {
     STATE = {};
+  }
+  try {
+    const pRaw = localStorage.getItem(PENDING_SYNC_KEY);
+    PENDING_SYNC = new Set(pRaw ? JSON.parse(pRaw) : []);
+  } catch {
+    PENDING_SYNC = new Set();
+  }
+}
+
+function persistPending() {
+  try {
+    localStorage.setItem(PENDING_SYNC_KEY, JSON.stringify([...PENDING_SYNC]));
+  } catch {}
+}
+
+function setSyncStatus(mode, text) {
+  const pill = document.getElementById('sync-pill');
+  if (!pill) return;
+  pill.className = `sync-pill ${mode ? `sync-${mode}` : ''}`.trim();
+  pill.textContent = text;
+}
+
+function formatBrDateTime(iso) {
+  if (!iso) return '';
+  try {
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return '';
+    return d.toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  } catch {
+    return '';
+  }
+}
+
+async function supabaseUpsertRnc(codigo, showToastOnOk = false) {
+  const st = getRncState(codigo);
+  PENDING_SYNC.add(codigo);
+  persistPending();
+  setSyncStatus('saving', `Salvando ${codigo} no site...`);
+
+  try {
+    const fps = (await getFieldPhotos(codigo)).slice(0, 3);
+    const payload = {
+      rnc_codigo: codigo,
+      verdict: st.verdict || '',
+      checks: Array.isArray(st.checks) ? st.checks : [],
+      gap: st.gap || '',
+      inspector: st.inspector || '',
+      visit_date: st.date || todayBr(),
+      field_photos: fps,
+    };
+
+    const resp = await fetch(`${SUPABASE_URL}/rest/v1/rnc_verificacoes?on_conflict=rnc_codigo`, {
+      method: 'POST',
+      headers: {
+        apikey: SUPABASE_KEY,
+        'Content-Type': 'application/json',
+        Prefer: 'resolution=merge-duplicates,return=representation',
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!resp.ok) {
+      const errTxt = await resp.text().catch(() => '');
+      cloudReady = false;
+      if (resp.status === 404 || errTxt.includes('PGRST205')) {
+        setSyncStatus('warn', 'Salvo no aparelho • Criar tabela SQL no Supabase');
+        if (showToastOnOk) showToast('Salvo no aparelho. Falta rodar o SQL da tabela no Supabase.');
+      } else {
+        setSyncStatus('warn', `Erro nuvem (${resp.status}) • Salvo local`);
+        if (showToastOnOk) showToast('Erro ao salvar na nuvem; mantido salvo no aparelho.');
+      }
+      return { ok: false, status: resp.status };
+    }
+
+    const rows = await resp.json().catch(() => []);
+    if (Array.isArray(rows) && rows[0]?.updated_at) {
+      st.updatedAt = rows[0].updated_at;
+    } else {
+      st.updatedAt = new Date().toISOString();
+    }
+    PENDING_SYNC.delete(codigo);
+    persistPending();
+    persistState();
+    cloudReady = true;
+
+    const nowHm = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    setSyncStatus('ok', `Salvo no site • ${nowHm}`);
+    const inlineMeta = document.getElementById('sheet-cloud-meta');
+    if (inlineMeta && currentRncCode === codigo) {
+      inlineMeta.textContent = `Salvo na nuvem: ${st.inspector || 'Equipe'} (${formatBrDateTime(st.updatedAt)})`;
+    }
+    if (showToastOnOk) showToast(`${codigo} salvo no site para toda a equipe!`);
+    return { ok: true };
+  } catch {
+    setSyncStatus('warn', 'Sem internet • Salvo no aparelho');
+    if (showToastOnOk) showToast('Sem sinal no momento — salvo no aparelho para sincronizar depois.');
+    return { ok: false };
+  }
+}
+
+function queueCloudSync(codigo) {
+  PENDING_SYNC.add(codigo);
+  persistPending();
+  setSyncStatus('saving', `Alterações em ${codigo}...`);
+  clearTimeout(syncDebounceTimers[codigo]);
+  syncDebounceTimers[codigo] = setTimeout(() => {
+    supabaseUpsertRnc(codigo, false);
+  }, 900);
+}
+
+async function flushPendingSync() {
+  const list = [...PENDING_SYNC];
+  for (const code of list) {
+    await supabaseUpsertRnc(code, false);
+  }
+}
+
+async function supabasePullAll(showToastMsg = false) {
+  try {
+    if (PENDING_SYNC.size > 0) {
+      await flushPendingSync();
+    }
+    const resp = await fetch(`${SUPABASE_URL}/rest/v1/rnc_verificacoes?select=*&order=updated_at.desc`, {
+      headers: {
+        apikey: SUPABASE_KEY,
+        Accept: 'application/json',
+      },
+    });
+    if (!resp.ok) {
+      const errTxt = await resp.text().catch(() => '');
+      cloudReady = false;
+      if (resp.status === 404 || errTxt.includes('PGRST205')) {
+        setSyncStatus('warn', 'Aguardando criação da tabela SQL no Supabase');
+      } else {
+        setSyncStatus('warn', `Nuvem indisponível (${resp.status}) • Modo local`);
+      }
+      return false;
+    }
+
+    const rows = await resp.json();
+    cloudReady = true;
+    let updatedCount = 0;
+
+    for (const row of rows) {
+      const code = row.rnc_codigo;
+      if (!code || PENDING_SYNC.has(code)) continue;
+      const local = STATE[code];
+      const remoteTs = row.updated_at ? new Date(row.updated_at).getTime() : 0;
+      const localTs = local?.updatedAt ? new Date(local.updatedAt).getTime() : 0;
+      if (!local || remoteTs > localTs) {
+        STATE[code] = {
+          verdict: row.verdict || '',
+          checks: Array.isArray(row.checks) ? row.checks : [],
+          gap: row.gap || '',
+          inspector: row.inspector || '',
+          date: row.visit_date || todayBr(),
+          updatedAt: row.updated_at || new Date().toISOString(),
+        };
+        if (Array.isArray(row.field_photos) && row.field_photos.length > 0) {
+          await saveFieldPhotos(code, row.field_photos);
+        }
+        updatedCount++;
+      }
+    }
+
+    persistState();
+    updateProgressSummary();
+    renderList();
+
+    const nowHm = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+    setSyncStatus('ok', `Sincronizado (${rows.length} reg.) • ${nowHm}`);
+    if (showToastMsg) {
+      showToast(updatedCount > 0 ? `${updatedCount} ficha(s) atualizada(s) da nuvem!` : 'Dados já estão atualizados com o site!');
+    }
+    return true;
+  } catch {
+    setSyncStatus('warn', 'Offline • Usando dados salvos no aparelho');
+    if (showToastMsg) showToast('Sem conexão para atualizar da nuvem.');
+    return false;
   }
 }
 
@@ -342,7 +528,7 @@ function renderList() {
           </div>
           ${gap ? `<div class="card-gap-preview"><strong>Falta:</strong> ${esc(gap)}</div>` : ''}
           <div class="rnc-card-footer">
-            <span class="checklist-mini">Checklist: ${markedCount}/${totalChecks} itens</span>
+            <span class="checklist-mini">Checklist: ${markedCount}/${totalChecks}${st.inspector ? ` • ${esc(st.inspector)}` : ''}</span>
             <span class="photo-chip ${noFolder ? 'no-folder' : ''}">
               ${
                 noFolder
@@ -493,10 +679,22 @@ async function openRncSheet(codigo) {
       <div class="cam-box">
         <label class="cam-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          Anexar Foto da Vistoria (Câmera / Galeria)
+          Anexar Foto da Vistoria (máx. 3 por RNC)
           <input id="input-field-cam" type="file" accept="image/*" capture="environment" multiple style="display:none" />
         </label>
         <div id="field-photos-grid" class="field-photos-grid"></div>
+      </div>
+
+      <div class="sheet-save-banner">
+        <div class="sheet-save-meta">
+          <strong>Salvamento Compartilhado no Site</strong>
+          <span id="sheet-cloud-meta">${
+            st.updatedAt
+              ? `Última gravação: ${esc(st.inspector || 'Equipe')} (${formatBrDateTime(st.updatedAt)})`
+              : 'Ao preencher, salva automaticamente no site para toda a equipe.'
+          }</span>
+        </div>
+        <button id="sheet-save-inline" class="btn btn-orange" style="min-height:38px;padding:0 12px;font-size:12px;" type="button">Salvar no Site</button>
       </div>
     </section>
 
@@ -556,6 +754,7 @@ async function openRncSheet(codigo) {
         cur.splice(Number(btn.dataset.delIdx), 1);
         await saveFieldPhotos(codigo, cur);
         renderFieldThumbs();
+        queueCloudSync(codigo);
         showToast('Foto removida');
       });
     });
@@ -593,6 +792,7 @@ async function openRncSheet(codigo) {
         persistState();
         updateProgressSummary();
         renderList();
+        queueCloudSync(codigo);
       });
     });
   });
@@ -609,6 +809,7 @@ async function openRncSheet(codigo) {
       persistState();
       updateProgressSummary();
       renderList();
+      queueCloudSync(codigo);
     });
   });
 
@@ -619,6 +820,7 @@ async function openRncSheet(codigo) {
     st.updatedAt = new Date().toISOString();
     persistState();
     renderList();
+    queueCloudSync(codigo);
   });
 
   bodyEl.querySelectorAll('.quick-chip').forEach((chip) => {
@@ -630,6 +832,7 @@ async function openRncSheet(codigo) {
       st.updatedAt = new Date().toISOString();
       persistState();
       renderList();
+      queueCloudSync(codigo);
     });
   });
 
@@ -639,27 +842,39 @@ async function openRncSheet(codigo) {
     st.inspector = inspInput.value;
     localStorage.setItem(LAST_INSPECTOR_KEY, st.inspector);
     persistState();
+    queueCloudSync(codigo);
   });
 
   const dateInput = document.getElementById('input-date');
   dateInput.addEventListener('input', () => {
     st.date = dateInput.value;
     persistState();
+    queueCloudSync(codigo);
   });
 
-  // Camera input
+  // Camera input (up to 3 compact JPEGs per RNC for fast shared sync)
   document.getElementById('input-field-cam').addEventListener('change', async (e) => {
     const files = Array.from(e.target.files || []);
     if (!files.length) return;
     showToast('Processando foto...');
     const cur = await getFieldPhotos(codigo);
     for (const f of files) {
-      const dataUrl = await compressCameraImage(f, 1000);
+      if (cur.length >= 3) {
+        showToast('Limite de 3 fotos por RNC atingido.');
+        break;
+      }
+      const dataUrl = await compressCameraImage(f, 720);
       cur.push({ dataUrl, ts: new Date().toISOString() });
     }
     await saveFieldPhotos(codigo, cur);
     renderFieldThumbs();
-    showToast(`${files.length} foto(s) salva(s) na ficha!`);
+    queueCloudSync(codigo);
+    showToast('Foto anexada e sincronizando no site!');
+  });
+
+  // Inline explicit Save to Site button
+  document.getElementById('sheet-save-inline').addEventListener('click', () => {
+    supabaseUpsertRnc(codigo, true);
   });
 
   // Original texts toggle
@@ -828,6 +1043,21 @@ async function init() {
   updateProgressSummary();
   renderList();
 
+  // Pull shared state from Supabase + auto-sync listeners
+  await supabasePullAll(false);
+  window.addEventListener('online', () => {
+    flushPendingSync().then(() => supabasePullAll(false));
+  });
+  setInterval(() => {
+    if (navigator.onLine && !currentRncCode) {
+      supabasePullAll(false);
+    }
+  }, 25000);
+
+  document.getElementById('btn-sync-cloud').addEventListener('click', () => {
+    supabasePullAll(true);
+  });
+
   // Filter tabs
   document.querySelectorAll('.tab-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -845,6 +1075,9 @@ async function init() {
 
   // Sheet controls
   document.getElementById('sheet-close').addEventListener('click', closeRncSheet);
+  document.getElementById('sheet-btn-save').addEventListener('click', () => {
+    if (currentRncCode) supabaseUpsertRnc(currentRncCode, true);
+  });
   document.getElementById('sheet-btn-wpp').addEventListener('click', () => {
     if (currentRncCode) sendSingleRncWhatsApp(currentRncCode);
   });
