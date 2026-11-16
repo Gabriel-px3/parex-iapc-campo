@@ -149,7 +149,7 @@ async function supabaseUpsertRnc(codigo, showToastOnOk = false) {
   setSyncStatus('saving', `Salvando ${codigo} no site...`);
 
   try {
-    const fps = (await getFieldPhotos(codigo)).slice(0, 3);
+    const fps = (await getFieldPhotos(codigo)).slice(0, 4);
     const payload = {
       rnc_codigo: codigo,
       verdict: st.verdict || '',
@@ -679,7 +679,7 @@ async function openRncSheet(codigo) {
       <div class="cam-box">
         <label class="cam-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          Anexar Foto da Vistoria (máx. 3 por RNC)
+          Anexar Foto da Vistoria (máx. 4 por RNC)
           <input id="input-field-cam" type="file" accept="image/*" capture="environment" multiple style="display:none" />
         </label>
         <div id="field-photos-grid" class="field-photos-grid"></div>
@@ -852,15 +852,15 @@ async function openRncSheet(codigo) {
     queueCloudSync(codigo);
   });
 
-  // Camera input (up to 3 compact JPEGs per RNC for fast shared sync)
+  // Camera input (up to 4 compact JPEGs per RNC for fast shared sync)
   document.getElementById('input-field-cam').addEventListener('change', async (e) => {
     const files = Array.from(e.target.files || []);
     if (!files.length) return;
     showToast('Processando foto...');
     const cur = await getFieldPhotos(codigo);
     for (const f of files) {
-      if (cur.length >= 3) {
-        showToast('Limite de 3 fotos por RNC atingido.');
+      if (cur.length >= 4) {
+        showToast('Limite de 4 fotos por RNC atingido.');
         break;
       }
       const dataUrl = await compressCameraImage(f, 720);

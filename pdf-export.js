@@ -321,7 +321,7 @@
       }
     }
     if (fieldPhotos && fieldPhotos.length) {
-      for (let i = 0; i < Math.min(fieldPhotos.length, 2); i++) {
+      for (let i = 0; i < Math.min(fieldPhotos.length, 4); i++) {
         const fp = fieldPhotos[i];
         const loaded = await loadImageAsDataUrl(fp.dataUrl, 850);
         if (loaded) imgsToRender.push({ ...loaded, cap: `Evidência de Campo #${i + 1}` });
@@ -330,7 +330,7 @@
 
     if (imgsToRender.length > 0) {
       const slotW = (W_BOX - 6) / 2;
-      const slotH = 54;
+      const slotH = 52;
       y = ensureSpace(doc, y, slotH + 16, logo, headerTitle, headerSub);
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(8.2);
@@ -338,25 +338,32 @@
       doc.text('REGISTROS FOTOGRÁFICOS (REFERÊNCIA FONTES / CAMPO)', M, y);
       y += 4;
 
-      imgsToRender.slice(0, 2).forEach((im, idx) => {
-        const ix = M + idx * (slotW + 6);
-        doc.setDrawColor(...GREY_1);
-        doc.setFillColor(255, 255, 255);
-        doc.roundedRect(ix, y, slotW, slotH + 8, 1.5, 1.5, 'FD');
+      for (let rowStart = 0; rowStart < imgsToRender.length; rowStart += 2) {
+        if (rowStart > 0) {
+          y = ensureSpace(doc, y, slotH + 12, logo, headerTitle, headerSub);
+        }
+        const pair = imgsToRender.slice(rowStart, rowStart + 2);
+        pair.forEach((im, idx) => {
+          const ix = M + idx * (slotW + 6);
+          doc.setDrawColor(...GREY_1);
+          doc.setFillColor(255, 255, 255);
+          doc.roundedRect(ix, y, slotW, slotH + 8, 1.5, 1.5, 'FD');
 
-        const ratio = Math.min((slotW - 4) / im.w, (slotH - 3) / im.h);
-        const rw = im.w * ratio;
-        const rh = im.h * ratio;
-        const rx = ix + (slotW - rw) / 2;
-        const ry = y + 2 + (slotH - rh) / 2;
-        doc.addImage(im.dataUrl, 'JPEG', rx, ry, rw, rh);
+          const ratio = Math.min((slotW - 4) / im.w, (slotH - 3) / im.h);
+          const rw = im.w * ratio;
+          const rh = im.h * ratio;
+          const rx = ix + (slotW - rw) / 2;
+          const ry = y + 2 + (slotH - rh) / 2;
+          doc.addImage(im.dataUrl, 'JPEG', rx, ry, rw, rh);
 
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(6.8);
-        doc.setTextColor(...GREY_9);
-        const cap = sanitizeTxt(im.cap || '').slice(0, 56);
-        doc.text(cap, ix + 2.5, y + slotH + 5);
-      });
+          doc.setFont('helvetica', 'normal');
+          doc.setFontSize(6.8);
+          doc.setTextColor(...GREY_9);
+          const cap = sanitizeTxt(im.cap || '').slice(0, 56);
+          doc.text(cap, ix + 2.5, y + slotH + 5);
+        });
+        y += slotH + 11;
+      }
     }
   }
 

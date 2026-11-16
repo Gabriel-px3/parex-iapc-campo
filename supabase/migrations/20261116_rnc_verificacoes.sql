@@ -86,6 +86,7 @@ create index if not exists idx_rnc_verificacoes_updated_at
 create or replace function public.fn_set_rnc_verificacoes_updated_at()
 returns trigger
 language plpgsql
+set search_path = public, pg_temp
 as $$
 begin
   new.updated_at := now();
