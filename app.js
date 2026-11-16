@@ -11,6 +11,9 @@ const DB_STORE = 'field_photos';
 
 const SUPABASE_URL = 'https://croedunritaqeegbzxus.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_FlFd0Tr7SbNaI5yhuv839A_-0IBVIjh';
+const STORAGE_BUCKET = 'rnc-campo-fotos';
+const MAX_FIELD_PHOTOS = 4;
+const MAX_PHOTO_BYTES = 10 * 1024 * 1024; // 10 MB por foto
 
 let DATA = { meta: {}, rncs: [] };
 let STATE = {}; // { [codigo]: { verdict: 'ok'|'parcial'|'nao'|'', checks: [], gap: '', inspector: '', date: '', updatedAt: '' } }
@@ -142,6 +145,28 @@ function formatBrDateTime(iso) {
   }
 }
 
+async function uploadPhotoBlobToStorage(codigo, blob, mime) {
+  const safeCode = codigo.replace('/', '-');
+  const ext = (mime && mime.split('/')[1]) ? mime.split('/')[1].replace('jpeg', 'jpg') : 'jpg';
+  const filePath = `${safeCode}/${Date.now()}_${Math.random().toString(36).slice(2, 7)}.${ext}`;
+  const resp = await fetch(`${SUPABASE_URL}/storage/v1/object/${STORAGE_BUCKET}/${filePath}`, {
+    method: 'POST',
+    headers: {
+      apikey: SUPABASE_KEY,
+      'Content-Type': mime || 'image/jpeg',
+      'x-upsert': 'true',
+    },
+    body: blob,
+  });
+  if (!resp.ok) {
+    throw new Error(`Storage upload ${resp.status}`);
+  }
+  return {
+    url: `${SUPABASE_URL}/storage/v1/object/public/${STORAGE_BUCKET}/${filePath}`,
+    path: filePath,
+  };
+}
+
 async function supabaseUpsertRnc(codigo, showToastOnOk = false) {
   const st = getRncState(codigo);
   PENDING_SYNC.add(codigo);
@@ -149,7 +174,35 @@ async function supabaseUpsertRnc(codigo, showToastOnOk = false) {
   setSyncStatus('saving', `Salvando ${codigo} no site...`);
 
   try {
-    const fps = (await getFieldPhotos(codigo)).slice(0, 4);
+    const rawFps = (await getFieldPhotos(codigo)).slice(0, MAX_FIELD_PHOTOS);
+    const syncedFps = [];
+    let modifiedLocalFps = false;
+
+    for (const fp of rawFps) {
+      if (fp.url) {
+        syncedFps.push({ url: fp.url, path: fp.path || '', size: fp.size || 0, ts: fp.ts || '' });
+      } else if (fp.dataUrl) {
+        try {
+          const blob = await (await fetch(fp.dataUrl)).blob();
+          const up = await uploadPhotoBlobToStorage(codigo, blob, blob.type || fp.mime || 'image/jpeg');
+          const cleanMeta = { url: up.url, path: up.path, size: blob.size, ts: fp.ts || new Date().toISOString() };
+          syncedFps.push(cleanMeta);
+          modifiedLocalFps = true;
+        } catch {
+          // Offline fallback only if small enough for jsonb
+          if (fp.dataUrl.length < 400000) {
+            syncedFps.push({ dataUrl: fp.dataUrl, ts: fp.ts || '' });
+          } else {
+            throw new Error('Upload foto falhou offline');
+          }
+        }
+      }
+    }
+
+    if (modifiedLocalFps) {
+      await saveFieldPhotos(codigo, syncedFps);
+    }
+
     const payload = {
       rnc_codigo: codigo,
       verdict: st.verdict || '',
@@ -157,7 +210,7 @@ async function supabaseUpsertRnc(codigo, showToastOnOk = false) {
       gap: st.gap || '',
       inspector: st.inspector || '',
       visit_date: st.date || todayBr(),
-      field_photos: fps,
+      field_photos: syncedFps,
     };
 
     const resp = await fetch(`${SUPABASE_URL}/rest/v1/rnc_verificacoes?on_conflict=rnc_codigo`, {
@@ -334,30 +387,11 @@ function verdictClass(v) {
   return 'verdict-pendente';
 }
 
-// Compress snapped camera photo
-function compressCameraImage(file, maxDim = 1000) {
+// Read image file preserving full quality up to 10 MB ceiling
+function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.onload = () => {
-      const img = new Image();
-      img.onload = () => {
-        let w = img.width;
-        let h = img.height;
-        if (w > maxDim || h > maxDim) {
-          const s = Math.min(maxDim / w, maxDim / h);
-          w = Math.round(w * s);
-          h = Math.round(h * s);
-        }
-        const c = document.createElement('canvas');
-        c.width = w;
-        c.height = h;
-        const ctx = c.getContext('2d');
-        ctx.drawImage(img, 0, 0, w, h);
-        resolve(c.toDataURL('image/jpeg', 0.78));
-      };
-      img.onerror = reject;
-      img.src = reader.result;
-    };
+    reader.onload = () => resolve(reader.result);
     reader.onerror = reject;
     reader.readAsDataURL(file);
   });
@@ -679,7 +713,7 @@ async function openRncSheet(codigo) {
       <div class="cam-box">
         <label class="cam-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          Anexar Foto da Vistoria (máx. 4 por RNC)
+          Anexar Foto da Vistoria (máx. 4 fotos • até 10 MB/foto)
           <input id="input-field-cam" type="file" accept="image/*" capture="environment" multiple style="display:none" />
         </label>
         <div id="field-photos-grid" class="field-photos-grid"></div>
@@ -731,7 +765,7 @@ async function openRncSheet(codigo) {
       .map(
         (fp, i) => `
         <div class="field-thumb-wrap">
-          <img src="${fp.dataUrl}" alt="Foto campo ${i + 1}" data-fp-idx="${i}" />
+          <img src="${esc(fp.url || fp.dataUrl)}" alt="Foto campo ${i + 1}" data-fp-idx="${i}" />
           <button type="button" class="field-thumb-del" data-del-idx="${i}" title="Remover">×</button>
         </div>
       `
@@ -741,7 +775,7 @@ async function openRncSheet(codigo) {
     grid.querySelectorAll('img').forEach((img) => {
       img.addEventListener('click', () => {
         openLightbox(
-          fps.map((p, idx) => ({ src: p.dataUrl, caption: `Evidência de Campo #${idx + 1} — ${codigo}` })),
+          fps.map((p, idx) => ({ src: p.url || p.dataUrl, caption: `Evidência de Campo #${idx + 1} — ${codigo}` })),
           Number(img.dataset.fpIdx)
         );
       });
@@ -852,24 +886,39 @@ async function openRncSheet(codigo) {
     queueCloudSync(codigo);
   });
 
-  // Camera input (up to 4 compact JPEGs per RNC for fast shared sync)
+  // Camera input (up to 4 photos per RNC, ceiling 10 MB per photo via Supabase Storage)
   document.getElementById('input-field-cam').addEventListener('change', async (e) => {
     const files = Array.from(e.target.files || []);
     if (!files.length) return;
-    showToast('Processando foto...');
+    showToast('Enviando foto(s)...');
     const cur = await getFieldPhotos(codigo);
+    let added = 0;
     for (const f of files) {
-      if (cur.length >= 4) {
+      if (cur.length >= MAX_FIELD_PHOTOS) {
         showToast('Limite de 4 fotos por RNC atingido.');
         break;
       }
-      const dataUrl = await compressCameraImage(f, 720);
-      cur.push({ dataUrl, ts: new Date().toISOString() });
+      if (f.size > MAX_PHOTO_BYTES) {
+        showToast(`"${f.name}" excede 10 MB (${(f.size / (1024 * 1024)).toFixed(1)} MB).`, 3500);
+        continue;
+      }
+      try {
+        const up = await uploadPhotoBlobToStorage(codigo, f, f.type || 'image/jpeg');
+        cur.push({ url: up.url, path: up.path, size: f.size, ts: new Date().toISOString() });
+        added++;
+      } catch {
+        const dataUrl = await readFileAsDataUrl(f);
+        cur.push({ dataUrl, mime: f.type || 'image/jpeg', size: f.size, ts: new Date().toISOString() });
+        added++;
+      }
     }
-    await saveFieldPhotos(codigo, cur);
-    renderFieldThumbs();
-    queueCloudSync(codigo);
-    showToast('Foto anexada e sincronizando no site!');
+    e.target.value = '';
+    if (added > 0) {
+      await saveFieldPhotos(codigo, cur);
+      renderFieldThumbs();
+      queueCloudSync(codigo);
+      showToast(`${added} foto(s) anexada(s) e salva(s) no site!`);
+    }
   });
 
   // Inline explicit Save to Site button

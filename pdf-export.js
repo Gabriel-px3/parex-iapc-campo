@@ -323,7 +323,9 @@
     if (fieldPhotos && fieldPhotos.length) {
       for (let i = 0; i < Math.min(fieldPhotos.length, 4); i++) {
         const fp = fieldPhotos[i];
-        const loaded = await loadImageAsDataUrl(fp.dataUrl, 850);
+        const src = fp.url || fp.dataUrl;
+        if (!src) continue;
+        const loaded = await loadImageAsDataUrl(src, 850);
         if (loaded) imgsToRender.push({ ...loaded, cap: `Evidência de Campo #${i + 1}` });
       }
     }

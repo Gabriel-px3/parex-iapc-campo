@@ -1,4 +1,4 @@
-const CACHE_NAME = 'parex-iapc-campo-v3';
+const CACHE_NAME = 'parex-iapc-campo-v4';
 const PHOTO_CACHE = 'parex-iapc-photos-v1';
 
 const APP_SHELL = [
